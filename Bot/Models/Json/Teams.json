@@ -1,0 +1,70 @@
+{
+    "name": "The Overwatch League",
+    "competitors": [
+        {
+            "competitor": {
+                "id": 4523,
+                "name": "Dallas Fuel",
+                "homeLocation": "Dallas, TX",
+                "primaryColor": "0c2340",
+                "secondaryColor": "0072ce",
+                "accounts": [
+                    {
+                        "value": "https://twitter.com/DallasFuel",
+                        "accountType": "TWITTER"
+                    }
+                ],
+                "abbreviatedName": "DAL",
+                "addressCountry": "US",
+                "logo": "https://bnetcmsus-a.akamaihd.net/cms/page_media/NO44N7DDJAPF1508792362936.png",
+                "players": [
+                    {
+                        "player": {
+                            "id": 3660,
+                            "name": "HarryHook",
+                            "homeLocation": "Asturias",
+                            "accounts": [
+                                {
+                                    "value": "https://twitter.com/HarryHook",
+                                    "accountType": "TWITTER",
+                                    "isPublic": true
+                                }
+                            ],
+                            "attributes": {
+                                "heroes": [
+                                    "lucio",
+                                    "soldier-76",
+                                    "zenyatta"
+                                ],
+                                "player_number": 9,
+                                "role": "support"
+                            },
+                            "familyName": "Tejedor Rua",
+                            "givenName": "Jonathan",
+                            "nationality": "ES",
+                            "headshot": "https://bnetcmsus-a.akamaihd.net/cms/page_media/X4JKRJUUAKYH1512685113279.png",
+                            "type": "PLAYER"
+                        },
+                        "flags": []
+                    }
+                ],
+                "owl_division": 80
+            }
+        }
+    ],
+    "logo": "https://bnetcmsus-a.akamaihd.net/cms/page_media/JEUWQ6CN33BR1507857496436.svg",
+    "owl_divisions": [
+        {
+            "id": "79",
+            "string": "owl.teams.divisions.atlantic",
+            "name": "Atlantic Division",
+            "abbrev": "ATL"
+        },
+        {
+            "id": "80",
+            "string": "owl.teams.divisions.pacific",
+            "name": "Pacific Division",
+            "abbrev": "PAC"
+        }
+    ]
+}

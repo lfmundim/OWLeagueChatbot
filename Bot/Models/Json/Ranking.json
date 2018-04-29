@@ -1,0 +1,52 @@
+{
+    "content": [
+        {
+            "competitor": {
+                "id": 4403,
+                "name": "New York Excelsior",
+                "homeLocation": "New York City, NY",
+                "primaryColor": "171c38",
+                "secondaryColor": "0f57ea",
+                "divisions": [
+                    {
+                        "competitor": {
+                            "id": 4403
+                        },
+                        "division": {
+                            "id": 79
+                        }
+                    },
+                    {
+                        "competitor": {
+                            "id": 4403
+                        },
+                        "division": {
+                            "id": 61
+                        }
+                    }
+                ],
+                "abbreviatedName": "NYE",
+                "addressCountry": "US",
+                "logo": "https://bnetcmsus-a.akamaihd.net/cms/page_media/9r/9RYLM8FICLJ01508818792450.png"
+            },
+            "placement": 1,
+            "advantage": 0,
+            "records": [
+                {
+                    "matchWin": 23,
+                    "matchLoss": 3,
+                    "matchDraw": 0,
+                    "matchBye": 0,
+                    "gameWin": 84,
+                    "gameLoss": 28,
+                    "gameTie": 2,
+                    "gamePointsFor": 0,
+                    "gamePointsAgainst": 0
+                }
+            ]
+        }
+    ],
+    "totalMatches": 240,
+    "matchesConcluded": 159,
+    "playoffCutoff": 6
+}

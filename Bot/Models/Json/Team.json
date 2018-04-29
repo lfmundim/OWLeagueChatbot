@@ -1,0 +1,149 @@
+{
+    "id": 4523,
+    "name": "Dallas Fuel",
+    "homeLocation": "Dallas, TX",
+    "primaryColor": "0c2340",
+    "secondaryColor": "0072ce",
+    "accounts": [
+        {
+            "value": "https://twitter.com/DallasFuel",
+            "accountType": "TWITTER",
+            "isPublic": true
+        }
+    ],
+    "abbreviatedName": "DAL",
+    "addressCountry": "US",
+    "logo": "https://bnetcmsus-a.akamaihd.net/cms/page_media/NO44N7DDJAPF1508792362936.png",
+    "icon": "https://bnetcmsus-a.akamaihd.net/cms/template_resource/YX6JZ6FR89LU1507822882865.svg",
+    "players": [
+        {
+            "id": 3660,
+            "name": "HarryHook",
+            "homeLocation": "Asturias",
+            "accounts": [
+                {
+                    "value": "https://twitter.com/HarryHook",
+                    "accountType": "TWITTER",
+                    "isPublic": true
+                }
+            ],
+            "attributes": {
+                "hero_image": null,
+                "heroes": [
+                    {
+                        "name": "lucio"
+                    }
+                ],
+                "player_number": 9,
+                "role": "support"
+            },
+            "familyName": "Tejedor Rua",
+            "givenName": "Jonathan",
+            "nationality": "ES",
+            "headshot": "https://bnetcmsus-a.akamaihd.net/cms/page_media/X4JKRJUUAKYH1512685113279.png",
+            "type": "PLAYER",
+            "flags": [],
+            "aboutUrl": "https://overwatchleague.com/teams"
+        }
+    ],
+    "secondaryPhoto": "https://bnetcmsus-a.akamaihd.net/cms/template_resource/YX6JZ6FR89LU1507822882865.svg",
+    "type": "TEAM",
+    "placement": 1,
+    "advantage": 0,
+    "ranking": {
+        "matchWin": 6,
+        "matchLoss": 21,
+        "matchDraw": 0,
+        "matchBye": 0,
+        "gameWin": 35,
+        "gameLoss": 72,
+        "gameTie": 6,
+        "gamePointsFor": 0,
+        "gamePointsAgainst": 0,
+        "streak": "L6",
+        "streakNum": -6
+    },
+    "schedule": [
+        {
+            "id": 10225,
+            "competitors": [
+                {
+                    "id": 4523,
+                    "name": "Dallas Fuel"
+                },
+                {
+                    "id": 4409,
+                    "name": "Seoul Dynasty"
+                }
+            ],
+            "scores": [
+                {
+                    "value": 1
+                },
+                {
+                    "value": 2
+                }
+            ],
+            "conclusionValue": 4,
+            "conclusionStrategy": "MINIMUM",
+            "winner": {
+                "id": 4409,
+                "name": "Seoul Dynasty"
+            },
+            "state": "CONCLUDED",
+            "games": [
+                {
+                    "id": 5607,
+                    "number": 1,
+                    "points": [
+                        3,
+                        2
+                    ],
+                    "attributes": {
+                        "map": "junkertown",
+                        "mapScore": {
+                            "team1": 3,
+                            "team2": 2
+                        }
+                    }
+                }
+            ],
+            "clientHints": [],
+            "bracket": {
+                "id": 2725,
+                "stage": {
+                    "id": 4665,
+                    "title": "Stage 1",
+                    "tournament": {
+                        "id": 3829,
+                        "location": "Burbank, CA USA",
+                        "title": "Overwatch League - Stage 1",
+                        "attributes": {
+                            "program": {
+                                "phase": "stage",
+                                "season_id": "2018",
+                                "stage": {
+                                    "format": "regular_season",
+                                    "number": 1
+                                }
+                            }
+                        },
+                        "series": {
+                            "id": 55
+                        }
+                    }
+                },
+                "thirdPlaceMatch": false,
+                "allowDraw": false
+            },
+            "dateCreated": 1507006990213,
+            "flags": [],
+            "handle": "match-9fec55a9-1cb5-304f-a7f6-4ddda3b389a1",
+            "startDate": 1515641400000,
+            "endDate": 1515649500000,
+            "showStartTime": true,
+            "showEndTime": true
+        }
+    ],
+    "aboutUrl": "https://overwatchleague.com/teams"
+}
