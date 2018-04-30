@@ -114,8 +114,8 @@ _TeamCity*
 *.dotCover
 
 # Visual Studio code coverage results
-*.coverage
-*.coveragexml
+#.coverage
+#.coveragexml
 
 # NCrunch
 _NCrunch_*
