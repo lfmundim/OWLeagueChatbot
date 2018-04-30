@@ -1,0 +1,9 @@
+﻿language: csharp
+solution: OWLeagueBot.sln
+dotnet: 2.0
+install:
+  - nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory testrunner
+  - dotnet restore OWLeagueBot.sln
+script:
+  - xbuild /p:Configuration=Release solution-name.sln
+  - mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./Tests/bin/Release/netcoreapp2.0/OWLeagueBot.Tests.dll
