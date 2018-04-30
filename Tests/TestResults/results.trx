@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="dff79c66-afc4-4918-a57b-1c13944c05c4" name="Lucas@FALCON 2018-04-30 01:22:43" runUser="FALCON\Lucas" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2018-04-30T01:22:43.5207173-03:00" queuing="2018-04-30T01:22:43.5207311-03:00" start="2018-04-30T01:22:39.2342322-03:00" finish="2018-04-30T01:24:44.6132113-03:00" />
+  <TestSettings name="default" id="499e589b-3f0d-4b9c-af19-cfe986827955">
+    <Deployment runDeploymentRoot="Lucas_FALCON_2018-04-30_01_22_43" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="0fb91135-62a8-42fe-ac60-eb37321d34fe" testId="b970b890-7a58-4a1b-97ab-190e0f931b28" testName="GetNewsAsync" computerName="FALCON" duration="00:00:01.1520000" startTime="2018-04-30T01:22:40.0000000-03:00" endTime="2018-04-30T01:22:41.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0fb91135-62a8-42fe-ac60-eb37321d34fe" />
+    <UnitTestResult executionId="826a1fa7-b5c3-47c3-ad76-1b069d173f89" testId="524bd03c-96fa-4a32-82b4-d55d6fd7af71" testName="GetRankingAsync" computerName="FALCON" duration="00:00:00.1990000" startTime="2018-04-30T01:22:41.0000000-03:00" endTime="2018-04-30T01:22:42.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="826a1fa7-b5c3-47c3-ad76-1b069d173f89" />
+    <UnitTestResult executionId="b5e4401e-20af-45da-96f3-832bf633fdaa" testId="d69874f9-428a-4e77-aa35-8976c124e2e3" testName="GetTeamAsync(4523)" computerName="FALCON" duration="00:00:01.4720000" startTime="2018-04-30T01:22:42.0000000-03:00" endTime="2018-04-30T01:22:43.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b5e4401e-20af-45da-96f3-832bf633fdaa" />
+    <UnitTestResult executionId="dd4ea9cd-943c-43ac-a863-32b47fb999cc" testId="adedc90c-01af-4549-8753-d5769a9e3df3" testName="GetTeamAsync(4524)" computerName="FALCON" duration="00:00:00.5210000" startTime="2018-04-30T01:22:43.0000000-03:00" endTime="2018-04-30T01:22:44.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dd4ea9cd-943c-43ac-a863-32b47fb999cc" />
+    <UnitTestResult executionId="7a0d4088-ac4f-41b4-a843-6b6d2132d9d8" testId="65fa11f4-3840-4bd3-bbad-902ebe3a86e8" testName="GetTeamAsync(4525)" computerName="FALCON" duration="00:00:00.5150000" startTime="2018-04-30T01:22:44.0000000-03:00" endTime="2018-04-30T01:22:44.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7a0d4088-ac4f-41b4-a843-6b6d2132d9d8" />
+    <UnitTestResult executionId="96fbd09c-2dc3-4798-adf1-94d0d8558317" testId="c4de2117-02b9-439d-8c79-fb293fa9b153" testName="GetTeamAsync(4402)" computerName="FALCON" duration="00:00:00.4980000" startTime="2018-04-30T01:22:44.0000000-03:00" endTime="2018-04-30T01:22:45.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="96fbd09c-2dc3-4798-adf1-94d0d8558317" />
+    <UnitTestResult executionId="23259af1-237e-4ad6-af00-abebf4deefd3" testId="22d0131b-0933-4998-9754-2398fd46af8c" testName="GetTeamAsync(4403)" computerName="FALCON" duration="00:00:00.5070000" startTime="2018-04-30T01:22:45.0000000-03:00" endTime="2018-04-30T01:22:45.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="23259af1-237e-4ad6-af00-abebf4deefd3" />
+    <UnitTestResult executionId="86ce3c43-f88b-40e5-82ae-90df65f7fe4a" testId="d6f13428-e183-4459-a4bf-4c6c6478ba49" testName="GetTeamAsync(4404)" computerName="FALCON" duration="00:00:00.5170000" startTime="2018-04-30T01:22:45.0000000-03:00" endTime="2018-04-30T01:22:46.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="86ce3c43-f88b-40e5-82ae-90df65f7fe4a" />
+    <UnitTestResult executionId="57b48b63-28b2-4691-bbfb-f601ab9ab36e" testId="a8b8b22c-808b-47a6-9540-2e7a71747fce" testName="GetTeamAsync(4405)" computerName="FALCON" duration="00:00:00.5120000" startTime="2018-04-30T01:22:46.0000000-03:00" endTime="2018-04-30T01:22:46.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="57b48b63-28b2-4691-bbfb-f601ab9ab36e" />
+    <UnitTestResult executionId="5c2c4269-66d9-46eb-9bc7-1265d9c18291" testId="be26cc10-3f32-4024-8de4-c1566d70e100" testName="GetTeamAsync(4406)" computerName="FALCON" duration="00:00:00.4970000" startTime="2018-04-30T01:22:46.0000000-03:00" endTime="2018-04-30T01:22:47.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5c2c4269-66d9-46eb-9bc7-1265d9c18291" />
+    <UnitTestResult executionId="0c2f10c5-c355-4209-9c29-b6b543c649b7" testId="a5bf6a75-1adb-43c4-b837-555afdb4dc32" testName="GetTeamAsync(4407)" computerName="FALCON" duration="00:00:00.4920000" startTime="2018-04-30T01:22:47.0000000-03:00" endTime="2018-04-30T01:22:47.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0c2f10c5-c355-4209-9c29-b6b543c649b7" />
+    <UnitTestResult executionId="8df180a6-47c4-46ff-8dd6-472caddb49a8" testId="c8fb92d9-ec66-4a1a-979e-3c3805e22042" testName="GetTeamAsync(4408)" computerName="FALCON" duration="00:00:00.4920000" startTime="2018-04-30T01:22:47.0000000-03:00" endTime="2018-04-30T01:22:48.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8df180a6-47c4-46ff-8dd6-472caddb49a8" />
+    <UnitTestResult executionId="af6508c6-f40a-4519-80c2-39a7ec4a6e75" testId="c566f7e3-bc53-4335-b391-a5810dcbfe09" testName="GetTeamAsync(4409)" computerName="FALCON" duration="00:00:00.5240000" startTime="2018-04-30T01:22:48.0000000-03:00" endTime="2018-04-30T01:22:48.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="af6508c6-f40a-4519-80c2-39a7ec4a6e75" />
+    <UnitTestResult executionId="17356421-34ce-42bd-8ab5-5b13836c6293" testId="c372a4fe-bf89-4005-ae80-03131c89e3e3" testName="GetTeamAsync(4410)" computerName="FALCON" duration="00:00:00.5410000" startTime="2018-04-30T01:22:48.0000000-03:00" endTime="2018-04-30T01:22:49.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="17356421-34ce-42bd-8ab5-5b13836c6293" />
+    <UnitTestResult executionId="6af8b50e-2ab7-467a-8bd8-af3f5ca4dfc4" testId="830e7fee-9f42-41da-8b88-748d1e8b1267" testName="GetTeamsAsync" computerName="FALCON" duration="00:00:00.2120000" startTime="2018-04-30T01:22:49.0000000-03:00" endTime="2018-04-30T01:22:49.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6af8b50e-2ab7-467a-8bd8-af3f5ca4dfc4" />
+    <UnitTestResult executionId="417e1ba6-daca-4348-b7cb-fc2c1c351bbd" testId="8d6eaaf5-0e38-4f09-9c57-7a36b71aec3e" testName="GetFutureMatchesAsync(4523)" computerName="FALCON" duration="00:00:02.0880000" startTime="2018-04-30T01:22:49.0000000-03:00" endTime="2018-04-30T01:22:51.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="417e1ba6-daca-4348-b7cb-fc2c1c351bbd" />
+    <UnitTestResult executionId="83d21f55-7fc0-4278-8617-327d3e6daff8" testId="22d1b06e-a973-409b-b2ea-adbcaf2206d4" testName="GetFutureMatchesAsync(4524)" computerName="FALCON" duration="00:00:00.5130000" startTime="2018-04-30T01:22:51.0000000-03:00" endTime="2018-04-30T01:22:52.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="83d21f55-7fc0-4278-8617-327d3e6daff8" />
+    <UnitTestResult executionId="15702864-e141-4e05-8480-7d97ca980e1a" testId="68321135-5b29-4ecc-a0f9-5ef455826099" testName="GetFutureMatchesAsync(4525)" computerName="FALCON" duration="00:00:00.5930000" startTime="2018-04-30T01:22:52.0000000-03:00" endTime="2018-04-30T01:22:52.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="15702864-e141-4e05-8480-7d97ca980e1a" />
+    <UnitTestResult executionId="fe6ed30c-9762-43c8-82be-78371970c49e" testId="18d90b85-d3e5-4dee-bb1c-3aa835ae4487" testName="GetFutureMatchesAsync(4402)" computerName="FALCON" duration="00:00:00.5070000" startTime="2018-04-30T01:22:52.0000000-03:00" endTime="2018-04-30T01:22:53.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fe6ed30c-9762-43c8-82be-78371970c49e" />
+    <UnitTestResult executionId="491b099e-283d-4d41-bc60-aedcd917c038" testId="1476a64e-5089-43d8-a637-768c6b8479b7" testName="GetFutureMatchesAsync(4403)" computerName="FALCON" duration="00:00:00.5340000" startTime="2018-04-30T01:22:53.0000000-03:00" endTime="2018-04-30T01:22:53.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="491b099e-283d-4d41-bc60-aedcd917c038" />
+    <UnitTestResult executionId="5622149b-309e-485c-9111-1b1c54b7ada1" testId="c5ab8786-e7b1-4987-82b3-89849e59cf02" testName="GetFutureMatchesAsync(4404)" computerName="FALCON" duration="00:00:00.5250000" startTime="2018-04-30T01:22:53.0000000-03:00" endTime="2018-04-30T01:22:54.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5622149b-309e-485c-9111-1b1c54b7ada1" />
+    <UnitTestResult executionId="16f31c6e-c53d-45e5-9924-d292561cbd16" testId="69440fac-cd1b-4331-8af3-57040fe50783" testName="GetFutureMatchesAsync(4405)" computerName="FALCON" duration="00:00:00.5270000" startTime="2018-04-30T01:22:54.0000000-03:00" endTime="2018-04-30T01:22:54.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="16f31c6e-c53d-45e5-9924-d292561cbd16" />
+    <UnitTestResult executionId="0ed99d5d-7aab-4f94-83e7-f5949b3d1b41" testId="8b24a54d-c18c-4dac-a378-e4e6f4da4ac2" testName="GetFutureMatchesAsync(4406)" computerName="FALCON" duration="00:00:00.5510000" startTime="2018-04-30T01:22:54.0000000-03:00" endTime="2018-04-30T01:22:55.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0ed99d5d-7aab-4f94-83e7-f5949b3d1b41" />
+    <UnitTestResult executionId="ab8a45e0-6572-446a-bcbe-9b941e82aefd" testId="947cc502-f652-4f63-b126-784745c84f02" testName="GetFutureMatchesAsync(4407)" computerName="FALCON" duration="00:00:00.5370000" startTime="2018-04-30T01:22:55.0000000-03:00" endTime="2018-04-30T01:22:55.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ab8a45e0-6572-446a-bcbe-9b941e82aefd" />
+    <UnitTestResult executionId="fb14159a-84ba-4313-8da9-5c04e5931cbd" testId="2255afcd-1daf-430b-b265-23c3fc2eeb63" testName="GetFutureMatchesAsync(4408)" computerName="FALCON" duration="00:00:00.4970000" startTime="2018-04-30T01:22:55.0000000-03:00" endTime="2018-04-30T01:22:56.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fb14159a-84ba-4313-8da9-5c04e5931cbd" />
+    <UnitTestResult executionId="27014824-cd0a-46fb-a430-92d21b32706d" testId="e0922ede-ec9a-4789-b7f8-685f219588ad" testName="GetFutureMatchesAsync(4409)" computerName="FALCON" duration="00:00:00.5210000" startTime="2018-04-30T01:22:56.0000000-03:00" endTime="2018-04-30T01:22:56.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="27014824-cd0a-46fb-a430-92d21b32706d" />
+    <UnitTestResult executionId="5783b315-430d-4066-8d01-33bbabb21fd7" testId="ad6c753a-d06c-4e98-9dc1-587e833250e2" testName="GetFutureMatchesAsync(4410)" computerName="FALCON" duration="00:00:00.5450000" startTime="2018-04-30T01:22:56.0000000-03:00" endTime="2018-04-30T01:22:57.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5783b315-430d-4066-8d01-33bbabb21fd7" />
+    <UnitTestResult executionId="ded49323-e62e-45f5-95c1-26ccb41058de" testId="ca791fdf-93b8-4cc6-b5f4-786f1e2a681b" testName="GetLastMatchupAsync(4523)" computerName="FALCON" duration="00:00:05.7870000" startTime="2018-04-30T01:22:57.0000000-03:00" endTime="2018-04-30T01:23:03.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ded49323-e62e-45f5-95c1-26ccb41058de" />
+    <UnitTestResult executionId="721ddedd-4a1e-4a78-9d7e-dfea25153086" testId="12ff0d4e-a5cb-4d31-82c2-cb3b5021458f" testName="GetLastMatchupAsync(4524)" computerName="FALCON" duration="00:00:06.0600000" startTime="2018-04-30T01:23:03.0000000-03:00" endTime="2018-04-30T01:23:09.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="721ddedd-4a1e-4a78-9d7e-dfea25153086" />
+    <UnitTestResult executionId="f8a51c31-4f8b-4331-bce8-0f0a4c6d89c7" testId="4b413685-f6b7-4a65-9ddf-f1dd534d56a8" testName="GetLastMatchupAsync(4525)" computerName="FALCON" duration="00:00:06.9890000" startTime="2018-04-30T01:23:09.0000000-03:00" endTime="2018-04-30T01:23:16.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f8a51c31-4f8b-4331-bce8-0f0a4c6d89c7" />
+    <UnitTestResult executionId="325915ab-4b35-4908-b73b-ea6f1c505708" testId="ede53748-574d-4577-b5fb-e79a97c2e6a9" testName="GetLastMatchupAsync(4402)" computerName="FALCON" duration="00:00:08.3420000" startTime="2018-04-30T01:23:16.0000000-03:00" endTime="2018-04-30T01:23:24.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="325915ab-4b35-4908-b73b-ea6f1c505708" />
+    <UnitTestResult executionId="d32f1257-fd96-442b-b7b3-230a6c510ba3" testId="6c8d5ee9-b9ad-4277-b4de-7c78973869dc" testName="GetLastMatchupAsync(4403)" computerName="FALCON" duration="00:00:11.5890000" startTime="2018-04-30T01:23:24.0000000-03:00" endTime="2018-04-30T01:23:36.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d32f1257-fd96-442b-b7b3-230a6c510ba3" />
+    <UnitTestResult executionId="e7d9ff14-8568-4296-868c-87c4105c8675" testId="d2734af5-7dcd-4243-990b-8f933d22b0dd" testName="GetLastMatchupAsync(4404)" computerName="FALCON" duration="00:00:10.2700000" startTime="2018-04-30T01:23:36.0000000-03:00" endTime="2018-04-30T01:23:46.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e7d9ff14-8568-4296-868c-87c4105c8675" />
+    <UnitTestResult executionId="5e4542c8-6fc3-4257-ab15-5b7e5a8f6446" testId="344af6ec-f052-4e68-8b26-d309f4d4ef8d" testName="GetLastMatchupAsync(4405)" computerName="FALCON" duration="00:00:08.0550000" startTime="2018-04-30T01:23:46.0000000-03:00" endTime="2018-04-30T01:23:54.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5e4542c8-6fc3-4257-ab15-5b7e5a8f6446" />
+    <UnitTestResult executionId="39c46cd5-7498-4ca0-8d99-e28b21ea82d0" testId="f94277fd-cc7d-49c8-8b59-9d1b6874da50" testName="GetLastMatchupAsync(4406)" computerName="FALCON" duration="00:00:07.6200000" startTime="2018-04-30T01:23:54.0000000-03:00" endTime="2018-04-30T01:24:02.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="39c46cd5-7498-4ca0-8d99-e28b21ea82d0" />
+    <UnitTestResult executionId="80911601-25c3-49fc-96e1-5ff14b444bed" testId="6013d650-a83e-4234-bd77-e06fce86c4a4" testName="GetLastMatchupAsync(4407)" computerName="FALCON" duration="00:00:07.3230000" startTime="2018-04-30T01:24:02.0000000-03:00" endTime="2018-04-30T01:24:09.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="80911601-25c3-49fc-96e1-5ff14b444bed" />
+    <UnitTestResult executionId="120d9203-ee9b-4478-a9b1-5c4f4afb8ad6" testId="af6052f8-d07a-4ed7-8f1e-298c4173136b" testName="GetLastMatchupAsync(4408)" computerName="FALCON" duration="00:00:07.4070000" startTime="2018-04-30T01:24:09.0000000-03:00" endTime="2018-04-30T01:24:16.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="120d9203-ee9b-4478-a9b1-5c4f4afb8ad6" />
+    <UnitTestResult executionId="e5d829c2-dd46-4ae0-be58-12050a1f4d6a" testId="91c4afdc-23bc-49b2-8b93-99c527a1d5a3" testName="GetLastMatchupAsync(4409)" computerName="FALCON" duration="00:00:07.4100000" startTime="2018-04-30T01:24:16.0000000-03:00" endTime="2018-04-30T01:24:24.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e5d829c2-dd46-4ae0-be58-12050a1f4d6a" />
+    <UnitTestResult executionId="41645643-0687-4f98-aa9f-05dbab0ab1fe" testId="7fc12abd-ae94-4d00-bb9c-f96d1044f01c" testName="GetLastMatchupAsync(4410)" computerName="FALCON" duration="00:00:08.2450000" startTime="2018-04-30T01:24:24.0000000-03:00" endTime="2018-04-30T01:24:32.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="41645643-0687-4f98-aa9f-05dbab0ab1fe" />
+    <UnitTestResult executionId="89cab623-e787-42cf-b031-50e3736e6049" testId="858593c4-b068-45ee-8d1f-4c53b5b0f034" testName="GetNewsAsync" computerName="FALCON" duration="00:00:00.3220000" startTime="2018-04-30T01:24:32.0000000-03:00" endTime="2018-04-30T01:24:32.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="89cab623-e787-42cf-b031-50e3736e6049" />
+    <UnitTestResult executionId="5a2419bf-cb76-48e8-9011-5c7043c6dbac" testId="dde3fd5c-7cbf-47cc-95df-82b3ec1ecd68" testName="GetNextMatchAsync(4523)" computerName="FALCON" duration="00:00:00.7630000" startTime="2018-04-30T01:24:32.0000000-03:00" endTime="2018-04-30T01:24:33.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5a2419bf-cb76-48e8-9011-5c7043c6dbac" />
+    <UnitTestResult executionId="3d28fc5b-cadf-4529-bebd-3b8978375471" testId="5d94457f-414a-42ca-9165-22e48a3f805f" testName="GetNextMatchAsync(4524)" computerName="FALCON" duration="00:00:00.7950000" startTime="2018-04-30T01:24:33.0000000-03:00" endTime="2018-04-30T01:24:34.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3d28fc5b-cadf-4529-bebd-3b8978375471" />
+    <UnitTestResult executionId="fd041575-f0c8-4111-bf93-1e660012d5a0" testId="5df17819-8165-4e6b-bfe6-76b1ae532e83" testName="GetNextMatchAsync(4525)" computerName="FALCON" duration="00:00:00.7690000" startTime="2018-04-30T01:24:34.0000000-03:00" endTime="2018-04-30T01:24:35.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fd041575-f0c8-4111-bf93-1e660012d5a0" />
+    <UnitTestResult executionId="4262be88-43b9-49c2-9fa0-fb17472ed3b7" testId="8aec46a7-b98f-43ad-b066-078ad2be0f98" testName="GetNextMatchAsync(4402)" computerName="FALCON" duration="00:00:00.6770000" startTime="2018-04-30T01:24:35.0000000-03:00" endTime="2018-04-30T01:24:35.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4262be88-43b9-49c2-9fa0-fb17472ed3b7" />
+    <UnitTestResult executionId="e47dfe50-a54a-4fca-8749-13ba490165e5" testId="60047058-6bbe-432b-a8fd-a47b9c6402e6" testName="GetNextMatchAsync(4403)" computerName="FALCON" duration="00:00:00.6920000" startTime="2018-04-30T01:24:35.0000000-03:00" endTime="2018-04-30T01:24:36.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e47dfe50-a54a-4fca-8749-13ba490165e5" />
+    <UnitTestResult executionId="c88b7299-1620-4285-8e99-4827a3e66d23" testId="a2d35b2c-2868-4d3e-b612-a9b8821e7ea7" testName="GetNextMatchAsync(4404)" computerName="FALCON" duration="00:00:00.6020000" startTime="2018-04-30T01:24:36.0000000-03:00" endTime="2018-04-30T01:24:37.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c88b7299-1620-4285-8e99-4827a3e66d23" />
+    <UnitTestResult executionId="4d7d694e-9864-408b-b3fc-bbb2fda84595" testId="9479af80-e860-40ab-8c95-700912e46dd7" testName="GetNextMatchAsync(4405)" computerName="FALCON" duration="00:00:00.7500000" startTime="2018-04-30T01:24:37.0000000-03:00" endTime="2018-04-30T01:24:37.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4d7d694e-9864-408b-b3fc-bbb2fda84595" />
+    <UnitTestResult executionId="7c784129-011a-4740-a113-202d830916e3" testId="7bd321ad-9ab7-4cea-a6a2-6b1e10e54ade" testName="GetNextMatchAsync(4406)" computerName="FALCON" duration="00:00:00.7430000" startTime="2018-04-30T01:24:37.0000000-03:00" endTime="2018-04-30T01:24:38.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7c784129-011a-4740-a113-202d830916e3" />
+    <UnitTestResult executionId="e98eb0ac-0f85-4808-a7a4-4eef131db120" testId="3ad699c1-fe4f-4150-8532-d72b8c71abcd" testName="GetNextMatchAsync(4407)" computerName="FALCON" duration="00:00:00.7150000" startTime="2018-04-30T01:24:38.0000000-03:00" endTime="2018-04-30T01:24:39.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e98eb0ac-0f85-4808-a7a4-4eef131db120" />
+    <UnitTestResult executionId="87957c84-f15f-4168-83d5-8f3f34fd2dc7" testId="200e4fd6-d939-4f13-b96f-b5b63855abe0" testName="GetNextMatchAsync(4408)" computerName="FALCON" duration="00:00:00.9460000" startTime="2018-04-30T01:24:39.0000000-03:00" endTime="2018-04-30T01:24:40.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="87957c84-f15f-4168-83d5-8f3f34fd2dc7" />
+    <UnitTestResult executionId="1b55a37c-38ca-464f-bc5b-682f234d09c2" testId="723f9041-4718-4118-87d6-346f45f9452d" testName="GetNextMatchAsync(4409)" computerName="FALCON" duration="00:00:01.0350000" startTime="2018-04-30T01:24:40.0000000-03:00" endTime="2018-04-30T01:24:41.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1b55a37c-38ca-464f-bc5b-682f234d09c2" />
+    <UnitTestResult executionId="51e1c86d-7915-4ccc-87f3-62dd2df4fa1d" testId="caedf111-646c-4126-a81d-d39148e5dbfa" testName="GetNextMatchAsync(4410)" computerName="FALCON" duration="00:00:01.4090000" startTime="2018-04-30T01:24:41.0000000-03:00" endTime="2018-04-30T01:24:42.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="51e1c86d-7915-4ccc-87f3-62dd2df4fa1d" />
+    <UnitTestResult executionId="a7490349-d4c6-4b0f-8a30-dbccf2341714" testId="d6a036d2-2bd5-4c4a-bb0c-ac5b61aff567" testName="GetRankingAsync" computerName="FALCON" duration="00:00:01.3430000" startTime="2018-04-30T01:24:42.0000000-03:00" endTime="2018-04-30T01:24:44.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a7490349-d4c6-4b0f-8a30-dbccf2341714" />
+    <UnitTestResult executionId="3b5dc659-8588-4204-80cf-d0a69935d48c" testId="6093d49f-8268-44a9-a820-66a7e66ef3ab" testName="GetTeamsByDivisionAsync(79)" computerName="FALCON" duration="00:00:00.1860000" startTime="2018-04-30T01:24:44.0000000-03:00" endTime="2018-04-30T01:24:44.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3b5dc659-8588-4204-80cf-d0a69935d48c" />
+    <UnitTestResult executionId="3045b82f-b6aa-49f4-86de-09f2f11b81eb" testId="4cc45ec3-864a-49da-abd0-65ea423d9941" testName="GetTeamsByDivisionAsync(80)" computerName="FALCON" duration="00:00:00.1880000" startTime="2018-04-30T01:24:44.0000000-03:00" endTime="2018-04-30T01:24:44.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3045b82f-b6aa-49f4-86de-09f2f11b81eb" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="GetNewsAsync" storage="e:\lucas\documents\git\owleague\owleaguebot\tests\bin\debug\netcoreapp2.0\owleaguebot.tests.dll" id="b970b890-7a58-4a1b-97ab-190e0f931b28">
+      <Execution id="0fb91135-62a8-42fe-ac60-eb37321d34fe" />
+      <TestMethod codeBase="E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dll" executorUriOfAdapter="executor://nunit3testexecutor/" className="OWLeagueBot.Tests.OWLApiUnitTests" name="GetNewsAsync" />
+    </UnitTest>
+    <UnitTest name="GetRankingAsync" storage="e:\lucas\documents\git\owleague\owleaguebot\tests\bin\debug\netcoreapp2.0\owleaguebot.tests.dll" id="524bd03c-96fa-4a32-82b4-d55d6fd7af71">
+      <Execution id="826a1fa7-b5c3-47c3-ad76-1b069d173f89" />
+      <TestMethod codeBase="E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dll" executorUriOfAdapter="executor://nunit3testexecutor/" className="OWLeagueBot.Tests.OWLApiUnitTests" name="GetRankingAsync" />
+    </UnitTest>
+    <UnitTest name="GetTeamAsync(4523)" storage="e:\lucas\documents\git\owleague\owleaguebot\tests\bin\debug\netcoreapp2.0\owleaguebot.tests.dll" id="d69874f9-428a-4e77-aa35-8976c124e2e3">
+      <Execution id="b5e4401e-20af-45da-96f3-832bf633fdaa" />
+      <TestMethod codeBase="E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dll" executorUriOfAdapter="executor://nunit3testexecutor/" className="OWLeagueBot.Tests.OWLApiUnitTests" name="GetTeamAsync(4523)" />
+    </UnitTest>
+    <UnitTest name="GetTeamAsync(4524)" storage="e:\lucas\documents\git\owleague\owleaguebot\tests\bin\debug\netcoreapp2.0\owleaguebot.tests.dll" id="adedc90c-01af-4549-8753-d5769a9e3df3">
+      <Execution id="dd4ea9cd-943c-43ac-a863-32b47fb999cc" />
+      <TestMethod codeBase="E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dll" executorUriOfAdapter="executor://nunit3testexecutor/" className="OWLeagueBot.Tests.OWLApiUnitTests" name="GetTeamAsync(4524)" />
+    </UnitTest>
+    <UnitTest name="GetTeamAsync(4525)" storage="e:\lucas\documents\git\owleague\owleaguebot\tests\bin\debug\netcoreapp2.0\owleaguebot.tests.dll" id="65fa11f4-3840-4bd3-bbad-902ebe3a86e8">
+      <Execution id="7a0d4088-ac4f-41b4-a843-6b6d2132d9d8" />
+      <TestMethod codeBase="E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dll" executorUriOfAdapter="executor://nunit3testexecutor/" className="OWLeagueBot.Tests.OWLApiUnitTests" name="GetTeamAsync(4525)" />
+    </UnitTest>
+    <UnitTest name="GetTeamAsync(4402)" storage="e:\lucas\documents\git\owleague\owleaguebot\tests\bin\debug\netcoreapp2.0\owleaguebot.tests.dll" id="c4de2117-02b9-439d-8c79-fb293fa9b153">
+      <Execution id="96fbd09c-2dc3-4798-adf1-94d0d8558317" />
+      <TestMethod codeBase="E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dll" executorUriOfAdapter="executor://nunit3testexecutor/" className="OWLeagueBot.Tests.OWLApiUnitTests" name="GetTeamAsync(4402)" />
+    </UnitTest>
+    <UnitTest name="GetTeamAsync(4403)" storage="e:\lucas\documents\git\owleague\owleaguebot\tests\bin\debug\netcoreapp2.0\owleaguebot.tests.dll" id="22d0131b-0933-4998-9754-2398fd46af8c">
+      <Execution id="23259af1-237e-4ad6-af00-abebf4deefd3" />
+      <TestMethod codeBase="E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dll" executorUriOfAdapter="executor://nunit3testexecutor/" className="OWLeagueBot.Tests.OWLApiUnitTests" name="GetTeamAsync(4403)" />
+    </UnitTest>
+    <UnitTest name="GetTeamAsync(4404)" storage="e:\lucas\documents\git\owleague\owleaguebot\tests\bin\debug\netcoreapp2.0\owleaguebot.tests.dll" id="d6f13428-e183-4459-a4bf-4c6c6478ba49">
+      <Execution id="86ce3c43-f88b-40e5-82ae-90df65f7fe4a" />
+      <TestMethod codeBase="E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dll" executorUriOfAdapter="executor://nunit3testexecutor/" className="OWLeagueBot.Tests.OWLApiUnitTests" name="GetTeamAsync(4404)" />
+    </UnitTest>
+    <UnitTest name="GetTeamAsync(4405)" storage="e:\lucas\documents\git\owleague\owleaguebot\tests\bin\debug\netcoreapp2.0\owleaguebot.tests.dll" id="a8b8b22c-808b-47a6-9540-2e7a71747fce">
+      <Execution id="57b48b63-28b2-4691-bbfb-f601ab9ab36e" />
+      <TestMethod codeBase="E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dll" executorUriOfAdapter="executor://nunit3testexecutor/" className="OWLeagueBot.Tests.OWLApiUnitTests" name="GetTeamAsync(4405)" />
+    </UnitTest>
+    <UnitTest name="GetTeamAsync(4406)" storage="e:\lucas\documents\git\owleague\owleaguebot\tests\bin\debug\netcoreapp2.0\owleaguebot.tests.dll" id="be26cc10-3f32-4024-8de4-c1566d70e100">
+      <Execution id="5c2c4269-66d9-46eb-9bc7-1265d9c18291" />
+      <TestMethod codeBase="E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dll" executorUriOfAdapter="executor://nunit3testexecutor/" className="OWLeagueBot.Tests.OWLApiUnitTests" name="GetTeamAsync(4406)" />
+    </UnitTest>
+    <UnitTest name="GetTeamAsync(4407)" storage="e:\lucas\documents\git\owleague\owleaguebot\tests\bin\debug\netcoreapp2.0\owleaguebot.tests.dll" id="a5bf6a75-1adb-43c4-b837-555afdb4dc32">
+      <Execution id="0c2f10c5-c355-4209-9c29-b6b543c649b7" />
+      <TestMethod codeBase="E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dll" executorUriOfAdapter="executor://nunit3testexecutor/" className="OWLeagueBot.Tests.OWLApiUnitTests" name="GetTeamAsync(4407)" />
+    </UnitTest>
+    <UnitTest name="GetTeamAsync(4408)" storage="e:\lucas\documents\git\owleague\owleaguebot\tests\bin\debug\netcoreapp2.0\owleaguebot.tests.dll" id="c8fb92d9-ec66-4a1a-979e-3c3805e22042">
+      <Execution id="8df180a6-47c4-46ff-8dd6-472caddb49a8" />
+      <TestMethod codeBase="E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dll" executorUriOfAdapter="executor://nunit3testexecutor/" className="OWLeagueBot.Tests.OWLApiUnitTests" name="GetTeamAsync(4408)" />
+    </UnitTest>
+    <UnitTest name="GetTeamAsync(4409)" storage="e:\lucas\documents\git\owleague\owleaguebot\tests\bin\debug\netcoreapp2.0\owleaguebot.tests.dll" id="c566f7e3-bc53-4335-b391-a5810dcbfe09">
+      <Execution id="af6508c6-f40a-4519-80c2-39a7ec4a6e75" />
+      <TestMethod codeBase="E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dll" executorUriOfAdapter="executor://nunit3testexecutor/" className="OWLeagueBot.Tests.OWLApiUnitTests" name="GetTeamAsync(4409)" />
+    </UnitTest>
+    <UnitTest name="GetTeamAsync(4410)" storage="e:\lucas\documents\git\owleague\owleaguebot\tests\bin\debug\netcoreapp2.0\owleaguebot.tests.dll" id="c372a4fe-bf89-4005-ae80-03131c89e3e3">
+      <Execution id="17356421-34ce-42bd-8ab5-5b13836c6293" />
+      <TestMethod codeBase="E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dll" executorUriOfAdapter="executor://nunit3testexecutor/" className="OWLeagueBot.Tests.OWLApiUnitTests" name="GetTeamAsync(4410)" />
+    </UnitTest>
+    <UnitTest name="GetTeamsAsync" storage="e:\lucas\documents\git\owleague\owleaguebot\tests\bin\debug\netcoreapp2.0\owleaguebot.tests.dll" id="830e7fee-9f42-41da-8b88-748d1e8b1267">
+      <Execution id="6af8b50e-2ab7-467a-8bd8-af3f5ca4dfc4" />
+      <TestMethod codeBase="E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dll" executorUriOfAdapter="executor://nunit3testexecutor/" className="OWLeagueBot.Tests.OWLApiUnitTests" name="GetTeamsAsync" />
+    </UnitTest>
+    <UnitTest name="GetFutureMatchesAsync(4523)" storage="e:\lucas\documents\git\owleague\owleaguebot\tests\bin\debug\netcoreapp2.0\owleaguebot.tests.dll" id="8d6eaaf5-0e38-4f09-9c57-7a36b71aec3e">
+      <Execution id="417e1ba6-daca-4348-b7cb-fc2c1c351bbd" />
+      <TestMethod codeBase="E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dll" executorUriOfAdapter="executor://nunit3testexecutor/" className="OWLeagueBot.Tests.OWLFilterUnitTests" name="GetFutureMatchesAsync(4523)" />
+    </UnitTest>
+    <UnitTest name="GetFutureMatchesAsync(4524)" storage="e:\lucas\documents\git\owleague\owleaguebot\tests\bin\debug\netcoreapp2.0\owleaguebot.tests.dll" id="22d1b06e-a973-409b-b2ea-adbcaf2206d4">
+      <Execution id="83d21f55-7fc0-4278-8617-327d3e6daff8" />
+      <TestMethod codeBase="E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dll" executorUriOfAdapter="executor://nunit3testexecutor/" className="OWLeagueBot.Tests.OWLFilterUnitTests" name="GetFutureMatchesAsync(4524)" />
+    </UnitTest>
+    <UnitTest name="GetFutureMatchesAsync(4525)" storage="e:\lucas\documents\git\owleague\owleaguebot\tests\bin\debug\netcoreapp2.0\owleaguebot.tests.dll" id="68321135-5b29-4ecc-a0f9-5ef455826099">
+      <Execution id="15702864-e141-4e05-8480-7d97ca980e1a" />
+      <TestMethod codeBase="E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dll" executorUriOfAdapter="executor://nunit3testexecutor/" className="OWLeagueBot.Tests.OWLFilterUnitTests" name="GetFutureMatchesAsync(4525)" />
+    </UnitTest>
+    <UnitTest name="GetFutureMatchesAsync(4402)" storage="e:\lucas\documents\git\owleague\owleaguebot\tests\bin\debug\netcoreapp2.0\owleaguebot.tests.dll" id="18d90b85-d3e5-4dee-bb1c-3aa835ae4487">
+      <Execution id="fe6ed30c-9762-43c8-82be-78371970c49e" />
+      <TestMethod codeBase="E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dll" executorUriOfAdapter="executor://nunit3testexecutor/" className="OWLeagueBot.Tests.OWLFilterUnitTests" name="GetFutureMatchesAsync(4402)" />
+    </UnitTest>
+    <UnitTest name="GetFutureMatchesAsync(4403)" storage="e:\lucas\documents\git\owleague\owleaguebot\tests\bin\debug\netcoreapp2.0\owleaguebot.tests.dll" id="1476a64e-5089-43d8-a637-768c6b8479b7">
+      <Execution id="491b099e-283d-4d41-bc60-aedcd917c038" />
+      <TestMethod codeBase="E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dll" executorUriOfAdapter="executor://nunit3testexecutor/" className="OWLeagueBot.Tests.OWLFilterUnitTests" name="GetFutureMatchesAsync(4403)" />
+    </UnitTest>
+    <UnitTest name="GetFutureMatchesAsync(4404)" storage="e:\lucas\documents\git\owleague\owleaguebot\tests\bin\debug\netcoreapp2.0\owleaguebot.tests.dll" id="c5ab8786-e7b1-4987-82b3-89849e59cf02">
+      <Execution id="5622149b-309e-485c-9111-1b1c54b7ada1" />
+      <TestMethod codeBase="E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dll" executorUriOfAdapter="executor://nunit3testexecutor/" className="OWLeagueBot.Tests.OWLFilterUnitTests" name="GetFutureMatchesAsync(4404)" />
+    </UnitTest>
+    <UnitTest name="GetFutureMatchesAsync(4405)" storage="e:\lucas\documents\git\owleague\owleaguebot\tests\bin\debug\netcoreapp2.0\owleaguebot.tests.dll" id="69440fac-cd1b-4331-8af3-57040fe50783">
+      <Execution id="16f31c6e-c53d-45e5-9924-d292561cbd16" />
+      <TestMethod codeBase="E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dll" executorUriOfAdapter="executor://nunit3testexecutor/" className="OWLeagueBot.Tests.OWLFilterUnitTests" name="GetFutureMatchesAsync(4405)" />
+    </UnitTest>
+    <UnitTest name="GetFutureMatchesAsync(4406)" storage="e:\lucas\documents\git\owleague\owleaguebot\tests\bin\debug\netcoreapp2.0\owleaguebot.tests.dll" id="8b24a54d-c18c-4dac-a378-e4e6f4da4ac2">
+      <Execution id="0ed99d5d-7aab-4f94-83e7-f5949b3d1b41" />
+      <TestMethod codeBase="E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dll" executorUriOfAdapter="executor://nunit3testexecutor/" className="OWLeagueBot.Tests.OWLFilterUnitTests" name="GetFutureMatchesAsync(4406)" />
+    </UnitTest>
+    <UnitTest name="GetFutureMatchesAsync(4407)" storage="e:\lucas\documents\git\owleague\owleaguebot\tests\bin\debug\netcoreapp2.0\owleaguebot.tests.dll" id="947cc502-f652-4f63-b126-784745c84f02">
+      <Execution id="ab8a45e0-6572-446a-bcbe-9b941e82aefd" />
+      <TestMethod codeBase="E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dll" executorUriOfAdapter="executor://nunit3testexecutor/" className="OWLeagueBot.Tests.OWLFilterUnitTests" name="GetFutureMatchesAsync(4407)" />
+    </UnitTest>
+    <UnitTest name="GetFutureMatchesAsync(4408)" storage="e:\lucas\documents\git\owleague\owleaguebot\tests\bin\debug\netcoreapp2.0\owleaguebot.tests.dll" id="2255afcd-1daf-430b-b265-23c3fc2eeb63">
+      <Execution id="fb14159a-84ba-4313-8da9-5c04e5931cbd" />
+      <TestMethod codeBase="E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dll" executorUriOfAdapter="executor://nunit3testexecutor/" className="OWLeagueBot.Tests.OWLFilterUnitTests" name="GetFutureMatchesAsync(4408)" />
+    </UnitTest>
+    <UnitTest name="GetFutureMatchesAsync(4409)" storage="e:\lucas\documents\git\owleague\owleaguebot\tests\bin\debug\netcoreapp2.0\owleaguebot.tests.dll" id="e0922ede-ec9a-4789-b7f8-685f219588ad">
+      <Execution id="27014824-cd0a-46fb-a430-92d21b32706d" />
+      <TestMethod codeBase="E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dll" executorUriOfAdapter="executor://nunit3testexecutor/" className="OWLeagueBot.Tests.OWLFilterUnitTests" name="GetFutureMatchesAsync(4409)" />
+    </UnitTest>
+    <UnitTest name="GetFutureMatchesAsync(4410)" storage="e:\lucas\documents\git\owleague\owleaguebot\tests\bin\debug\netcoreapp2.0\owleaguebot.tests.dll" id="ad6c753a-d06c-4e98-9dc1-587e833250e2">
+      <Execution id="5783b315-430d-4066-8d01-33bbabb21fd7" />
+      <TestMethod codeBase="E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dll" executorUriOfAdapter="executor://nunit3testexecutor/" className="OWLeagueBot.Tests.OWLFilterUnitTests" name="GetFutureMatchesAsync(4410)" />
+    </UnitTest>
+    <UnitTest name="GetLastMatchupAsync(4523)" storage="e:\lucas\documents\git\owleague\owleaguebot\tests\bin\debug\netcoreapp2.0\owleaguebot.tests.dll" id="ca791fdf-93b8-4cc6-b5f4-786f1e2a681b">
+      <Execution id="ded49323-e62e-45f5-95c1-26ccb41058de" />
+      <TestMethod codeBase="E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dll" executorUriOfAdapter="executor://nunit3testexecutor/" className="OWLeagueBot.Tests.OWLFilterUnitTests" name="GetLastMatchupAsync(4523)" />
+    </UnitTest>
+    <UnitTest name="GetLastMatchupAsync(4524)" storage="e:\lucas\documents\git\owleague\owleaguebot\tests\bin\debug\netcoreapp2.0\owleaguebot.tests.dll" id="12ff0d4e-a5cb-4d31-82c2-cb3b5021458f">
+      <Execution id="721ddedd-4a1e-4a78-9d7e-dfea25153086" />
+      <TestMethod codeBase="E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dll" executorUriOfAdapter="executor://nunit3testexecutor/" className="OWLeagueBot.Tests.OWLFilterUnitTests" name="GetLastMatchupAsync(4524)" />
+    </UnitTest>
+    <UnitTest name="GetLastMatchupAsync(4525)" storage="e:\lucas\documents\git\owleague\owleaguebot\tests\bin\debug\netcoreapp2.0\owleaguebot.tests.dll" id="4b413685-f6b7-4a65-9ddf-f1dd534d56a8">
+      <Execution id="f8a51c31-4f8b-4331-bce8-0f0a4c6d89c7" />
+      <TestMethod codeBase="E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dll" executorUriOfAdapter="executor://nunit3testexecutor/" className="OWLeagueBot.Tests.OWLFilterUnitTests" name="GetLastMatchupAsync(4525)" />
+    </UnitTest>
+    <UnitTest name="GetLastMatchupAsync(4402)" storage="e:\lucas\documents\git\owleague\owleaguebot\tests\bin\debug\netcoreapp2.0\owleaguebot.tests.dll" id="ede53748-574d-4577-b5fb-e79a97c2e6a9">
+      <Execution id="325915ab-4b35-4908-b73b-ea6f1c505708" />
+      <TestMethod codeBase="E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dll" executorUriOfAdapter="executor://nunit3testexecutor/" className="OWLeagueBot.Tests.OWLFilterUnitTests" name="GetLastMatchupAsync(4402)" />
+    </UnitTest>
+    <UnitTest name="GetLastMatchupAsync(4403)" storage="e:\lucas\documents\git\owleague\owleaguebot\tests\bin\debug\netcoreapp2.0\owleaguebot.tests.dll" id="6c8d5ee9-b9ad-4277-b4de-7c78973869dc">
+      <Execution id="d32f1257-fd96-442b-b7b3-230a6c510ba3" />
+      <TestMethod codeBase="E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dll" executorUriOfAdapter="executor://nunit3testexecutor/" className="OWLeagueBot.Tests.OWLFilterUnitTests" name="GetLastMatchupAsync(4403)" />
+    </UnitTest>
+    <UnitTest name="GetLastMatchupAsync(4404)" storage="e:\lucas\documents\git\owleague\owleaguebot\tests\bin\debug\netcoreapp2.0\owleaguebot.tests.dll" id="d2734af5-7dcd-4243-990b-8f933d22b0dd">
+      <Execution id="e7d9ff14-8568-4296-868c-87c4105c8675" />
+      <TestMethod codeBase="E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dll" executorUriOfAdapter="executor://nunit3testexecutor/" className="OWLeagueBot.Tests.OWLFilterUnitTests" name="GetLastMatchupAsync(4404)" />
+    </UnitTest>
+    <UnitTest name="GetLastMatchupAsync(4405)" storage="e:\lucas\documents\git\owleague\owleaguebot\tests\bin\debug\netcoreapp2.0\owleaguebot.tests.dll" id="344af6ec-f052-4e68-8b26-d309f4d4ef8d">
+      <Execution id="5e4542c8-6fc3-4257-ab15-5b7e5a8f6446" />
+      <TestMethod codeBase="E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dll" executorUriOfAdapter="executor://nunit3testexecutor/" className="OWLeagueBot.Tests.OWLFilterUnitTests" name="GetLastMatchupAsync(4405)" />
+    </UnitTest>
+    <UnitTest name="GetLastMatchupAsync(4406)" storage="e:\lucas\documents\git\owleague\owleaguebot\tests\bin\debug\netcoreapp2.0\owleaguebot.tests.dll" id="f94277fd-cc7d-49c8-8b59-9d1b6874da50">
+      <Execution id="39c46cd5-7498-4ca0-8d99-e28b21ea82d0" />
+      <TestMethod codeBase="E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dll" executorUriOfAdapter="executor://nunit3testexecutor/" className="OWLeagueBot.Tests.OWLFilterUnitTests" name="GetLastMatchupAsync(4406)" />
+    </UnitTest>
+    <UnitTest name="GetLastMatchupAsync(4407)" storage="e:\lucas\documents\git\owleague\owleaguebot\tests\bin\debug\netcoreapp2.0\owleaguebot.tests.dll" id="6013d650-a83e-4234-bd77-e06fce86c4a4">
+      <Execution id="80911601-25c3-49fc-96e1-5ff14b444bed" />
+      <TestMethod codeBase="E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dll" executorUriOfAdapter="executor://nunit3testexecutor/" className="OWLeagueBot.Tests.OWLFilterUnitTests" name="GetLastMatchupAsync(4407)" />
+    </UnitTest>
+    <UnitTest name="GetLastMatchupAsync(4408)" storage="e:\lucas\documents\git\owleague\owleaguebot\tests\bin\debug\netcoreapp2.0\owleaguebot.tests.dll" id="af6052f8-d07a-4ed7-8f1e-298c4173136b">
+      <Execution id="120d9203-ee9b-4478-a9b1-5c4f4afb8ad6" />
+      <TestMethod codeBase="E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dll" executorUriOfAdapter="executor://nunit3testexecutor/" className="OWLeagueBot.Tests.OWLFilterUnitTests" name="GetLastMatchupAsync(4408)" />
+    </UnitTest>
+    <UnitTest name="GetLastMatchupAsync(4409)" storage="e:\lucas\documents\git\owleague\owleaguebot\tests\bin\debug\netcoreapp2.0\owleaguebot.tests.dll" id="91c4afdc-23bc-49b2-8b93-99c527a1d5a3">
+      <Execution id="e5d829c2-dd46-4ae0-be58-12050a1f4d6a" />
+      <TestMethod codeBase="E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dll" executorUriOfAdapter="executor://nunit3testexecutor/" className="OWLeagueBot.Tests.OWLFilterUnitTests" name="GetLastMatchupAsync(4409)" />
+    </UnitTest>
+    <UnitTest name="GetLastMatchupAsync(4410)" storage="e:\lucas\documents\git\owleague\owleaguebot\tests\bin\debug\netcoreapp2.0\owleaguebot.tests.dll" id="7fc12abd-ae94-4d00-bb9c-f96d1044f01c">
+      <Execution id="41645643-0687-4f98-aa9f-05dbab0ab1fe" />
+      <TestMethod codeBase="E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dll" executorUriOfAdapter="executor://nunit3testexecutor/" className="OWLeagueBot.Tests.OWLFilterUnitTests" name="GetLastMatchupAsync(4410)" />
+    </UnitTest>
+    <UnitTest name="GetNewsAsync" storage="e:\lucas\documents\git\owleague\owleaguebot\tests\bin\debug\netcoreapp2.0\owleaguebot.tests.dll" id="858593c4-b068-45ee-8d1f-4c53b5b0f034">
+      <Execution id="89cab623-e787-42cf-b031-50e3736e6049" />
+      <TestMethod codeBase="E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dll" executorUriOfAdapter="executor://nunit3testexecutor/" className="OWLeagueBot.Tests.OWLFilterUnitTests" name="GetNewsAsync" />
+    </UnitTest>
+    <UnitTest name="GetNextMatchAsync(4523)" storage="e:\lucas\documents\git\owleague\owleaguebot\tests\bin\debug\netcoreapp2.0\owleaguebot.tests.dll" id="dde3fd5c-7cbf-47cc-95df-82b3ec1ecd68">
+      <Execution id="5a2419bf-cb76-48e8-9011-5c7043c6dbac" />
+      <TestMethod codeBase="E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dll" executorUriOfAdapter="executor://nunit3testexecutor/" className="OWLeagueBot.Tests.OWLFilterUnitTests" name="GetNextMatchAsync(4523)" />
+    </UnitTest>
+    <UnitTest name="GetNextMatchAsync(4524)" storage="e:\lucas\documents\git\owleague\owleaguebot\tests\bin\debug\netcoreapp2.0\owleaguebot.tests.dll" id="5d94457f-414a-42ca-9165-22e48a3f805f">
+      <Execution id="3d28fc5b-cadf-4529-bebd-3b8978375471" />
+      <TestMethod codeBase="E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dll" executorUriOfAdapter="executor://nunit3testexecutor/" className="OWLeagueBot.Tests.OWLFilterUnitTests" name="GetNextMatchAsync(4524)" />
+    </UnitTest>
+    <UnitTest name="GetNextMatchAsync(4525)" storage="e:\lucas\documents\git\owleague\owleaguebot\tests\bin\debug\netcoreapp2.0\owleaguebot.tests.dll" id="5df17819-8165-4e6b-bfe6-76b1ae532e83">
+      <Execution id="fd041575-f0c8-4111-bf93-1e660012d5a0" />
+      <TestMethod codeBase="E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dll" executorUriOfAdapter="executor://nunit3testexecutor/" className="OWLeagueBot.Tests.OWLFilterUnitTests" name="GetNextMatchAsync(4525)" />
+    </UnitTest>
+    <UnitTest name="GetNextMatchAsync(4402)" storage="e:\lucas\documents\git\owleague\owleaguebot\tests\bin\debug\netcoreapp2.0\owleaguebot.tests.dll" id="8aec46a7-b98f-43ad-b066-078ad2be0f98">
+      <Execution id="4262be88-43b9-49c2-9fa0-fb17472ed3b7" />
+      <TestMethod codeBase="E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dll" executorUriOfAdapter="executor://nunit3testexecutor/" className="OWLeagueBot.Tests.OWLFilterUnitTests" name="GetNextMatchAsync(4402)" />
+    </UnitTest>
+    <UnitTest name="GetNextMatchAsync(4403)" storage="e:\lucas\documents\git\owleague\owleaguebot\tests\bin\debug\netcoreapp2.0\owleaguebot.tests.dll" id="60047058-6bbe-432b-a8fd-a47b9c6402e6">
+      <Execution id="e47dfe50-a54a-4fca-8749-13ba490165e5" />
+      <TestMethod codeBase="E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dll" executorUriOfAdapter="executor://nunit3testexecutor/" className="OWLeagueBot.Tests.OWLFilterUnitTests" name="GetNextMatchAsync(4403)" />
+    </UnitTest>
+    <UnitTest name="GetNextMatchAsync(4404)" storage="e:\lucas\documents\git\owleague\owleaguebot\tests\bin\debug\netcoreapp2.0\owleaguebot.tests.dll" id="a2d35b2c-2868-4d3e-b612-a9b8821e7ea7">
+      <Execution id="c88b7299-1620-4285-8e99-4827a3e66d23" />
+      <TestMethod codeBase="E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dll" executorUriOfAdapter="executor://nunit3testexecutor/" className="OWLeagueBot.Tests.OWLFilterUnitTests" name="GetNextMatchAsync(4404)" />
+    </UnitTest>
+    <UnitTest name="GetNextMatchAsync(4405)" storage="e:\lucas\documents\git\owleague\owleaguebot\tests\bin\debug\netcoreapp2.0\owleaguebot.tests.dll" id="9479af80-e860-40ab-8c95-700912e46dd7">
+      <Execution id="4d7d694e-9864-408b-b3fc-bbb2fda84595" />
+      <TestMethod codeBase="E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dll" executorUriOfAdapter="executor://nunit3testexecutor/" className="OWLeagueBot.Tests.OWLFilterUnitTests" name="GetNextMatchAsync(4405)" />
+    </UnitTest>
+    <UnitTest name="GetNextMatchAsync(4406)" storage="e:\lucas\documents\git\owleague\owleaguebot\tests\bin\debug\netcoreapp2.0\owleaguebot.tests.dll" id="7bd321ad-9ab7-4cea-a6a2-6b1e10e54ade">
+      <Execution id="7c784129-011a-4740-a113-202d830916e3" />
+      <TestMethod codeBase="E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dll" executorUriOfAdapter="executor://nunit3testexecutor/" className="OWLeagueBot.Tests.OWLFilterUnitTests" name="GetNextMatchAsync(4406)" />
+    </UnitTest>
+    <UnitTest name="GetNextMatchAsync(4407)" storage="e:\lucas\documents\git\owleague\owleaguebot\tests\bin\debug\netcoreapp2.0\owleaguebot.tests.dll" id="3ad699c1-fe4f-4150-8532-d72b8c71abcd">
+      <Execution id="e98eb0ac-0f85-4808-a7a4-4eef131db120" />
+      <TestMethod codeBase="E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dll" executorUriOfAdapter="executor://nunit3testexecutor/" className="OWLeagueBot.Tests.OWLFilterUnitTests" name="GetNextMatchAsync(4407)" />
+    </UnitTest>
+    <UnitTest name="GetNextMatchAsync(4408)" storage="e:\lucas\documents\git\owleague\owleaguebot\tests\bin\debug\netcoreapp2.0\owleaguebot.tests.dll" id="200e4fd6-d939-4f13-b96f-b5b63855abe0">
+      <Execution id="87957c84-f15f-4168-83d5-8f3f34fd2dc7" />
+      <TestMethod codeBase="E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dll" executorUriOfAdapter="executor://nunit3testexecutor/" className="OWLeagueBot.Tests.OWLFilterUnitTests" name="GetNextMatchAsync(4408)" />
+    </UnitTest>
+    <UnitTest name="GetNextMatchAsync(4409)" storage="e:\lucas\documents\git\owleague\owleaguebot\tests\bin\debug\netcoreapp2.0\owleaguebot.tests.dll" id="723f9041-4718-4118-87d6-346f45f9452d">
+      <Execution id="1b55a37c-38ca-464f-bc5b-682f234d09c2" />
+      <TestMethod codeBase="E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dll" executorUriOfAdapter="executor://nunit3testexecutor/" className="OWLeagueBot.Tests.OWLFilterUnitTests" name="GetNextMatchAsync(4409)" />
+    </UnitTest>
+    <UnitTest name="GetNextMatchAsync(4410)" storage="e:\lucas\documents\git\owleague\owleaguebot\tests\bin\debug\netcoreapp2.0\owleaguebot.tests.dll" id="caedf111-646c-4126-a81d-d39148e5dbfa">
+      <Execution id="51e1c86d-7915-4ccc-87f3-62dd2df4fa1d" />
+      <TestMethod codeBase="E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dll" executorUriOfAdapter="executor://nunit3testexecutor/" className="OWLeagueBot.Tests.OWLFilterUnitTests" name="GetNextMatchAsync(4410)" />
+    </UnitTest>
+    <UnitTest name="GetRankingAsync" storage="e:\lucas\documents\git\owleague\owleaguebot\tests\bin\debug\netcoreapp2.0\owleaguebot.tests.dll" id="d6a036d2-2bd5-4c4a-bb0c-ac5b61aff567">
+      <Execution id="a7490349-d4c6-4b0f-8a30-dbccf2341714" />
+      <TestMethod codeBase="E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dll" executorUriOfAdapter="executor://nunit3testexecutor/" className="OWLeagueBot.Tests.OWLFilterUnitTests" name="GetRankingAsync" />
+    </UnitTest>
+    <UnitTest name="GetTeamsByDivisionAsync(79)" storage="e:\lucas\documents\git\owleague\owleaguebot\tests\bin\debug\netcoreapp2.0\owleaguebot.tests.dll" id="6093d49f-8268-44a9-a820-66a7e66ef3ab">
+      <Execution id="3b5dc659-8588-4204-80cf-d0a69935d48c" />
+      <TestMethod codeBase="E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dll" executorUriOfAdapter="executor://nunit3testexecutor/" className="OWLeagueBot.Tests.OWLFilterUnitTests" name="GetTeamsByDivisionAsync(79)" />
+    </UnitTest>
+    <UnitTest name="GetTeamsByDivisionAsync(80)" storage="e:\lucas\documents\git\owleague\owleaguebot\tests\bin\debug\netcoreapp2.0\owleaguebot.tests.dll" id="4cc45ec3-864a-49da-abd0-65ea423d9941">
+      <Execution id="3045b82f-b6aa-49f4-86de-09f2f11b81eb" />
+      <TestMethod codeBase="E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dll" executorUriOfAdapter="executor://nunit3testexecutor/" className="OWLeagueBot.Tests.OWLFilterUnitTests" name="GetTeamsByDivisionAsync(80)" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="b970b890-7a58-4a1b-97ab-190e0f931b28" executionId="0fb91135-62a8-42fe-ac60-eb37321d34fe" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="524bd03c-96fa-4a32-82b4-d55d6fd7af71" executionId="826a1fa7-b5c3-47c3-ad76-1b069d173f89" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d69874f9-428a-4e77-aa35-8976c124e2e3" executionId="b5e4401e-20af-45da-96f3-832bf633fdaa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="adedc90c-01af-4549-8753-d5769a9e3df3" executionId="dd4ea9cd-943c-43ac-a863-32b47fb999cc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="65fa11f4-3840-4bd3-bbad-902ebe3a86e8" executionId="7a0d4088-ac4f-41b4-a843-6b6d2132d9d8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c4de2117-02b9-439d-8c79-fb293fa9b153" executionId="96fbd09c-2dc3-4798-adf1-94d0d8558317" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="22d0131b-0933-4998-9754-2398fd46af8c" executionId="23259af1-237e-4ad6-af00-abebf4deefd3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d6f13428-e183-4459-a4bf-4c6c6478ba49" executionId="86ce3c43-f88b-40e5-82ae-90df65f7fe4a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a8b8b22c-808b-47a6-9540-2e7a71747fce" executionId="57b48b63-28b2-4691-bbfb-f601ab9ab36e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="be26cc10-3f32-4024-8de4-c1566d70e100" executionId="5c2c4269-66d9-46eb-9bc7-1265d9c18291" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a5bf6a75-1adb-43c4-b837-555afdb4dc32" executionId="0c2f10c5-c355-4209-9c29-b6b543c649b7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c8fb92d9-ec66-4a1a-979e-3c3805e22042" executionId="8df180a6-47c4-46ff-8dd6-472caddb49a8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c566f7e3-bc53-4335-b391-a5810dcbfe09" executionId="af6508c6-f40a-4519-80c2-39a7ec4a6e75" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c372a4fe-bf89-4005-ae80-03131c89e3e3" executionId="17356421-34ce-42bd-8ab5-5b13836c6293" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="830e7fee-9f42-41da-8b88-748d1e8b1267" executionId="6af8b50e-2ab7-467a-8bd8-af3f5ca4dfc4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8d6eaaf5-0e38-4f09-9c57-7a36b71aec3e" executionId="417e1ba6-daca-4348-b7cb-fc2c1c351bbd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="22d1b06e-a973-409b-b2ea-adbcaf2206d4" executionId="83d21f55-7fc0-4278-8617-327d3e6daff8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="68321135-5b29-4ecc-a0f9-5ef455826099" executionId="15702864-e141-4e05-8480-7d97ca980e1a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="18d90b85-d3e5-4dee-bb1c-3aa835ae4487" executionId="fe6ed30c-9762-43c8-82be-78371970c49e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1476a64e-5089-43d8-a637-768c6b8479b7" executionId="491b099e-283d-4d41-bc60-aedcd917c038" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c5ab8786-e7b1-4987-82b3-89849e59cf02" executionId="5622149b-309e-485c-9111-1b1c54b7ada1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="69440fac-cd1b-4331-8af3-57040fe50783" executionId="16f31c6e-c53d-45e5-9924-d292561cbd16" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8b24a54d-c18c-4dac-a378-e4e6f4da4ac2" executionId="0ed99d5d-7aab-4f94-83e7-f5949b3d1b41" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="947cc502-f652-4f63-b126-784745c84f02" executionId="ab8a45e0-6572-446a-bcbe-9b941e82aefd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2255afcd-1daf-430b-b265-23c3fc2eeb63" executionId="fb14159a-84ba-4313-8da9-5c04e5931cbd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e0922ede-ec9a-4789-b7f8-685f219588ad" executionId="27014824-cd0a-46fb-a430-92d21b32706d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ad6c753a-d06c-4e98-9dc1-587e833250e2" executionId="5783b315-430d-4066-8d01-33bbabb21fd7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ca791fdf-93b8-4cc6-b5f4-786f1e2a681b" executionId="ded49323-e62e-45f5-95c1-26ccb41058de" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="12ff0d4e-a5cb-4d31-82c2-cb3b5021458f" executionId="721ddedd-4a1e-4a78-9d7e-dfea25153086" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4b413685-f6b7-4a65-9ddf-f1dd534d56a8" executionId="f8a51c31-4f8b-4331-bce8-0f0a4c6d89c7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ede53748-574d-4577-b5fb-e79a97c2e6a9" executionId="325915ab-4b35-4908-b73b-ea6f1c505708" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6c8d5ee9-b9ad-4277-b4de-7c78973869dc" executionId="d32f1257-fd96-442b-b7b3-230a6c510ba3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d2734af5-7dcd-4243-990b-8f933d22b0dd" executionId="e7d9ff14-8568-4296-868c-87c4105c8675" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="344af6ec-f052-4e68-8b26-d309f4d4ef8d" executionId="5e4542c8-6fc3-4257-ab15-5b7e5a8f6446" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f94277fd-cc7d-49c8-8b59-9d1b6874da50" executionId="39c46cd5-7498-4ca0-8d99-e28b21ea82d0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6013d650-a83e-4234-bd77-e06fce86c4a4" executionId="80911601-25c3-49fc-96e1-5ff14b444bed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="af6052f8-d07a-4ed7-8f1e-298c4173136b" executionId="120d9203-ee9b-4478-a9b1-5c4f4afb8ad6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="91c4afdc-23bc-49b2-8b93-99c527a1d5a3" executionId="e5d829c2-dd46-4ae0-be58-12050a1f4d6a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7fc12abd-ae94-4d00-bb9c-f96d1044f01c" executionId="41645643-0687-4f98-aa9f-05dbab0ab1fe" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="858593c4-b068-45ee-8d1f-4c53b5b0f034" executionId="89cab623-e787-42cf-b031-50e3736e6049" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dde3fd5c-7cbf-47cc-95df-82b3ec1ecd68" executionId="5a2419bf-cb76-48e8-9011-5c7043c6dbac" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5d94457f-414a-42ca-9165-22e48a3f805f" executionId="3d28fc5b-cadf-4529-bebd-3b8978375471" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5df17819-8165-4e6b-bfe6-76b1ae532e83" executionId="fd041575-f0c8-4111-bf93-1e660012d5a0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8aec46a7-b98f-43ad-b066-078ad2be0f98" executionId="4262be88-43b9-49c2-9fa0-fb17472ed3b7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="60047058-6bbe-432b-a8fd-a47b9c6402e6" executionId="e47dfe50-a54a-4fca-8749-13ba490165e5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a2d35b2c-2868-4d3e-b612-a9b8821e7ea7" executionId="c88b7299-1620-4285-8e99-4827a3e66d23" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9479af80-e860-40ab-8c95-700912e46dd7" executionId="4d7d694e-9864-408b-b3fc-bbb2fda84595" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7bd321ad-9ab7-4cea-a6a2-6b1e10e54ade" executionId="7c784129-011a-4740-a113-202d830916e3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3ad699c1-fe4f-4150-8532-d72b8c71abcd" executionId="e98eb0ac-0f85-4808-a7a4-4eef131db120" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="200e4fd6-d939-4f13-b96f-b5b63855abe0" executionId="87957c84-f15f-4168-83d5-8f3f34fd2dc7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="723f9041-4718-4118-87d6-346f45f9452d" executionId="1b55a37c-38ca-464f-bc5b-682f234d09c2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="caedf111-646c-4126-a81d-d39148e5dbfa" executionId="51e1c86d-7915-4ccc-87f3-62dd2df4fa1d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d6a036d2-2bd5-4c4a-bb0c-ac5b61aff567" executionId="a7490349-d4c6-4b0f-8a30-dbccf2341714" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6093d49f-8268-44a9-a820-66a7e66ef3ab" executionId="3b5dc659-8588-4204-80cf-d0a69935d48c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4cc45ec3-864a-49da-abd0-65ea423d9941" executionId="3045b82f-b6aa-49f4-86de-09f2f11b81eb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="55" executed="55" passed="55" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 3.10.0.21: Test execution startedRunning all tests in E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dllNUnit3TestExecutor converted 55 of 55 NUnit test casesNUnit Adapter 3.10.0.21: Test execution complete</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>
