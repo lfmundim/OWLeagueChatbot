@@ -3,6 +3,7 @@ using OWLeagueBot.Models;
 using OWLeagueBot.Services;
 using Shouldly;
 using System.Runtime;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Threading.Tasks;
 using static OWLeagueBot.Models.Enumerations;
 
