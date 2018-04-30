@@ -4,11 +4,7 @@ using OWLeagueBot.Models;
 using OWLeagueBot.Models.Responses;
 using OWLeagueBot.Services;
 using System;
-using System.Collections.Generic;
-using System.Runtime.Serialization;
-using System.Text;
 using System.Threading.Tasks;
-using Take.Blip.Client.Extensions.Broadcast;
 using Take.Blip.Client.Extensions.Scheduler;
 using static OWLeagueBot.Models.Enumerations;
 

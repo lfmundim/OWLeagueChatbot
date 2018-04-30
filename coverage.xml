@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CoverageSession xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+  <Modules>
+    <Module skippedDueTo="Filter" hash="61-76-47-E0-8B-BE-78-EC-D4-B7-01-C5-D1-9E-B1-8D-57-6D-61-9D">
+      <ModulePath>C:\Windows\assembly\GAC_64\mscorlib\2.0.0.0__b77a5c561934e089\mscorlib.dll</ModulePath>
+      <ModuleTime>2017-09-28T17:50:00Z</ModuleTime>
+      <ModuleName>mscorlib</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="F9-04-A8-31-CD-FB-23-72-95-63-5D-14-9A-A0-66-8E-7F-44-93-7A">
+      <ModulePath>C:\Windows\assembly\GAC_64\mscorlib\2.0.0.0__b77a5c561934e089\sorttbls.nlp</ModulePath>
+      <ModuleTime>2017-09-28T17:50:00Z</ModuleTime>
+      <ModuleName>mscorlib</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="9F-C3-2E-51-B5-EB-69-B9-60-21-42-1F-17-25-12-07-16-11-20-50">
+      <ModulePath>E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\tools\NUnit.Runners.2.6.4\tools\nunit-console.exe</ModulePath>
+      <ModuleTime>2014-12-17T00:04:36Z</ModuleTime>
+      <ModuleName>nunit-console</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="F2-ED-FF-09-01-C9-D7-BC-29-AC-A6-93-C5-97-8A-0D-43-DD-8D-F2">
+      <ModulePath>E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\tools\NUnit.Runners.2.6.4\tools\lib\nunit-console-runner.dll</ModulePath>
+      <ModuleTime>2014-12-17T00:04:36Z</ModuleTime>
+      <ModuleName>nunit-console-runner</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="36-B9-FF-C0-07-EA-59-4D-23-2E-FD-CD-5A-45-CF-C0-2C-42-2A-98">
+      <ModulePath>E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\tools\NUnit.Runners.2.6.4\tools\lib\nunit.core.dll</ModulePath>
+      <ModuleTime>2014-12-17T00:04:36Z</ModuleTime>
+      <ModuleName>nunit.core</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="14-C3-4B-3E-39-7A-EE-C0-B9-2F-83-44-2F-04-8A-F7-48-7B-67-DE">
+      <ModulePath>E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\tools\NUnit.Runners.2.6.4\tools\lib\nunit.util.dll</ModulePath>
+      <ModuleTime>2014-12-17T00:04:36Z</ModuleTime>
+      <ModuleName>nunit.util</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="5E-95-A6-AD-88-48-98-B1-62-7F-4E-5A-C1-0E-F3-B7-85-56-44-E8">
+      <ModulePath>E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\tools\NUnit.Runners.2.6.4\tools\lib\nunit.core.interfaces.dll</ModulePath>
+      <ModuleTime>2014-12-17T00:04:36Z</ModuleTime>
+      <ModuleName>nunit.core.interfaces</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="6E-30-2E-50-36-FB-60-2C-8E-50-C0-83-54-8B-CC-EA-A8-91-B6-CC">
+      <ModulePath>C:\Windows\assembly\GAC_64\mscorlib\2.0.0.0__b77a5c561934e089\sortkey.nlp</ModulePath>
+      <ModuleTime>2017-09-28T17:50:00Z</ModuleTime>
+      <ModuleName>mscorlib</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="35-B3-75-56-F3-D9-59-6B-85-5E-3E-4A-31-46-BB-57-47-49-64-18">
+      <ModulePath>C:\Windows\assembly\GAC_MSIL\System.Configuration\2.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll</ModulePath>
+      <ModuleTime>2017-09-28T22:52:00Z</ModuleTime>
+      <ModuleName>System.Configuration</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="98-AA-F2-78-F8-16-6E-61-FD-F8-F7-46-02-99-DF-4B-C5-CE-D3-20">
+      <ModulePath>C:\Windows\assembly\GAC_MSIL\System\2.0.0.0__b77a5c561934e089\System.dll</ModulePath>
+      <ModuleTime>2017-09-28T22:52:00Z</ModuleTime>
+      <ModuleName>System</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="CE-CA-E7-37-2A-A5-9B-F6-E7-25-D7-3F-09-2B-FF-90-66-EC-33-BC">
+      <ModulePath>C:\Windows\assembly\GAC_MSIL\System.Xml\2.0.0.0__b77a5c561934e089\System.Xml.dll</ModulePath>
+      <ModuleTime>2017-12-22T03:10:09.132682Z</ModuleTime>
+      <ModuleName>System.Xml</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="23-39-5F-CA-55-B8-65-96-02-CB-3C-BC-67-DE-7C-C9-5D-AA-A2-11">
+      <ModulePath>C:\Windows\assembly\GAC_MSIL\System.Runtime.Remoting\2.0.0.0__b77a5c561934e089\System.Runtime.Remoting.dll</ModulePath>
+      <ModuleTime>2017-09-28T23:00:00Z</ModuleTime>
+      <ModuleName>System.Runtime.Remoting</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="D9-A4-43-79-FA-F4-2A-B0-31-3A-20-A1-03-C5-E0-42-94-AB-99-28">
+      <ModulePath>C:\Windows\Microsoft.Net\assembly\GAC_64\mscorlib\v4.0_4.0.0.0__b77a5c561934e089\mscorlib.dll</ModulePath>
+      <ModuleTime>2018-02-09T03:35:01.1681381Z</ModuleTime>
+      <ModuleName>mscorlib</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="E8-07-A4-A1-06-33-5B-A6-17-CF-DC-6F-28-47-58-85-D6-9F-6B-46">
+      <ModulePath>E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\tools\NUnit.Runners.2.6.4\tools\nunit-agent.exe</ModulePath>
+      <ModuleTime>2014-12-17T00:04:36Z</ModuleTime>
+      <ModuleName>nunit-agent</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="36-B9-FF-C0-07-EA-59-4D-23-2E-FD-CD-5A-45-CF-C0-2C-42-2A-98">
+      <ModulePath>E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\tools\NUnit.Runners.2.6.4\tools\lib\nunit.core.dll</ModulePath>
+      <ModuleTime>2014-12-17T00:04:36Z</ModuleTime>
+      <ModuleName>nunit.core</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="14-C3-4B-3E-39-7A-EE-C0-B9-2F-83-44-2F-04-8A-F7-48-7B-67-DE">
+      <ModulePath>E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\tools\NUnit.Runners.2.6.4\tools\lib\nunit.util.dll</ModulePath>
+      <ModuleTime>2014-12-17T00:04:36Z</ModuleTime>
+      <ModuleName>nunit.util</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="5E-95-A6-AD-88-48-98-B1-62-7F-4E-5A-C1-0E-F3-B7-85-56-44-E8">
+      <ModulePath>E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\tools\NUnit.Runners.2.6.4\tools\lib\nunit.core.interfaces.dll</ModulePath>
+      <ModuleTime>2014-12-17T00:04:36Z</ModuleTime>
+      <ModuleName>nunit.core.interfaces</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="CB-7B-C7-A0-09-0F-BA-F4-8A-02-A9-E9-2A-7B-43-34-93-46-0F-58">
+      <ModulePath>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll</ModulePath>
+      <ModuleTime>2017-09-29T13:43:06.7717063Z</ModuleTime>
+      <ModuleName>System</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="95-C2-7F-29-1B-5E-88-C5-62-B1-37-09-E1-F0-97-D4-51-18-8D-2E">
+      <ModulePath>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.Remoting\v4.0_4.0.0.0__b77a5c561934e089\System.Runtime.Remoting.dll</ModulePath>
+      <ModuleTime>2017-09-29T13:43:06.6935754Z</ModuleTime>
+      <ModuleName>System.Runtime.Remoting</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="62-13-DF-BA-4D-76-38-3A-FE-E9-5E-D8-6C-07-CC-1D-A2-DE-73-52">
+      <ModulePath>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll</ModulePath>
+      <ModuleTime>2017-09-29T13:43:06.6154445Z</ModuleTime>
+      <ModuleName>System.Configuration</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="58-2A-4C-0C-25-69-3C-E5-E8-8F-0E-35-DB-19-D0-78-0E-D1-10-FA">
+      <ModulePath>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll</ModulePath>
+      <ModuleTime>2017-12-22T03:10:39.7166266Z</ModuleTime>
+      <ModuleName>System.Xml</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="DC-F8-A3-B5-3C-D2-A2-92-BD-DE-4F-B9-C1-C6-59-24-2B-D3-FE-39">
+      <ModulePath>C:\Windows\Microsoft.Net\assembly\GAC_64\System.Web\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Web.dll</ModulePath>
+      <ModuleTime>2018-02-09T03:34:33.7286998Z</ModuleTime>
+      <ModuleName>System.Web</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="BD-85-CD-BA-88-6D-8B-83-85-1F-A5-F0-EF-86-E3-3C-23-EC-97-A1">
+      <ModulePath>C:\Windows\assembly\GAC_64\System.Web\2.0.0.0__b03f5f7f11d50a3a\System.Web.dll</ModulePath>
+      <ModuleTime>2017-09-28T17:50:00Z</ModuleTime>
+      <ModuleName>System.Web</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="36-B9-FF-C0-07-EA-59-4D-23-2E-FD-CD-5A-45-CF-C0-2C-42-2A-98">
+      <ModulePath>E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\tools\NUnit.Runners.2.6.4\tools\lib\nunit.core.dll</ModulePath>
+      <ModuleTime>2014-12-17T00:04:36Z</ModuleTime>
+      <ModuleName>nunit.core</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="CB-7B-C7-A0-09-0F-BA-F4-8A-02-A9-E9-2A-7B-43-34-93-46-0F-58">
+      <ModulePath>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll</ModulePath>
+      <ModuleTime>2017-09-29T13:43:06.7717063Z</ModuleTime>
+      <ModuleName>System</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="53-25-23-C6-63-70-35-C6-0C-82-04-1A-0A-BF-1A-E7-1F-EA-74-A3">
+      <ModulePath>E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\tools\NUnit.Runners.2.6.4\tools\pnunit.framework.dll</ModulePath>
+      <ModuleTime>2014-12-17T00:04:36Z</ModuleTime>
+      <ModuleName>pnunit.framework</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="21-69-E9-47-C6-F8-02-12-31-E6-18-DE-8E-43-24-C9-AB-F7-C2-BE">
+      <ModulePath>E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\tools\NUnit.Runners.2.6.4\tools\pnunit-agent.exe</ModulePath>
+      <ModuleTime>2014-12-17T00:04:36Z</ModuleTime>
+      <ModuleName>pnunit-agent</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="5E-95-A6-AD-88-48-98-B1-62-7F-4E-5A-C1-0E-F3-B7-85-56-44-E8">
+      <ModulePath>E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\tools\NUnit.Runners.2.6.4\tools\lib\nunit.core.interfaces.dll</ModulePath>
+      <ModuleTime>2014-12-17T00:04:36Z</ModuleTime>
+      <ModuleName>nunit.core.interfaces</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="0F-CF-13-35-5C-F7-1E-CE-F9-F6-E1-ED-30-BF-4A-70-DC-51-37-E3">
+      <ModulePath>E:\Lucas\Documents\Git\OWLeague\OWLeagueBot\Tests\bin\Debug\netcoreapp2.0\OWLeagueBot.Tests.dll</ModulePath>
+      <ModuleTime>2018-04-30T00:26:30.6535687Z</ModuleTime>
+      <ModuleName>OWLeagueBot.Tests</ModuleName>
+      <Classes />
+    </Module>
+  </Modules>
+</CoverageSession>

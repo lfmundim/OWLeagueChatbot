@@ -12,9 +12,9 @@ environment:
     COVERALLS_REPO_TOKEN:  
        secure: bVxxnkgysLLTF368oQ/HhHaPvtXjCOEOpY8YZKvM0dftuwX4AtV+FNR8pnFrAhmN
  
-# after_test: 
-# # generate report for NUnit testing framework:
-#     - cmd:packages\OpenCover.4.6.519\tools\OpenCover.Console.exe -register:user -filter:"+[*]*" -target:"packages\NUnit.ConsoleRunner.3.2.1\tools\nunit3-console.exe" -targetargs:"/domain:single OWLeagueBot/Tests/bin/debug/netcoreapp2.0/OWLeagueBot.Tests.dll" -output:coverage.xml
+after_test: 
+# generate report for NUnit testing framework:
+    - .\tools\OpenCover.4.6.519\tools\OpenCover.Console.exe -register:user -target:"C:/Program Files/dotnet/dotnet.exe" -targetargs:"test --logger:trx;LogFileName=results.trx /p:DebugType=full ./Tests/OWLeagueBot.Tests.csproj" -filter:"+[OWLeagueBot*]* -[OWLeagueBot.Tests*]*" -output:".\my_app_coverage.xml"
 
 # # generate report for MSTest testing framework:
 # #    -cmd: packages\OpenCover.4.6.166\tools\OpenCover.Console.exe -register:user -filter:"+[*]*" -target:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\MSTest.exe" -targetargs:"/testcontainer:OWLeagueBot.Tests/bin/debug/OWLeagueBot.Tests.dll" -output:coverage.xml

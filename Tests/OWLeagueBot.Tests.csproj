@@ -8,11 +8,15 @@
 
   <ItemGroup>
     <PackageReference Include="coveralls.io" Version="1.4.2" />
+    <PackageReference Include="coveralls.net" Version="0.7.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.5.0" />
     <PackageReference Include="MSTest.TestAdapter" Version="1.2.0" />
     <PackageReference Include="MSTest.TestFramework" Version="1.2.0" />
+    <PackageReference Include="NETStandard.Library" Version="2.0.2" />
     <PackageReference Include="NUnit" Version="3.10.1" />
+    <PackageReference Include="NUnit.Runners" Version="3.8.0" />
     <PackageReference Include="NUnit3TestAdapter" Version="3.10.0" />
+    <PackageReference Include="OpenCover" Version="4.6.519" />
     <PackageReference Include="Shouldly" Version="3.0.0" />
   </ItemGroup>
 
