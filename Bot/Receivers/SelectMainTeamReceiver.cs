@@ -22,11 +22,6 @@ namespace OWLeagueBot.Receivers
         private readonly IContextManager _contextManager;
         private readonly IContactExtension _contactService;
         private readonly ISender _sender;
-        private readonly Settings _settings;
-        private readonly IBucketExtension _bucket;
-        private readonly IOWLFilter _owlFilter;
-        private readonly ICarouselBuilder _carouselBuilder;
-        private readonly ISchedulerExtension _scheduler;
         private readonly IBroadcastExtension _broadcast;
         private readonly ILogger _logger;
 
@@ -35,22 +30,13 @@ namespace OWLeagueBot.Receivers
             IContactExtension contactService,
             ISender sender,
             ILogger logger,
-            IBucketExtension bucket,
-            IOWLFilter owlFilter,
-            ICarouselBuilder carouselBuilder,
-            ISchedulerExtension scheduler,
             IBroadcastExtension broadcast,
-            Settings settings) : base(contextManager, contactService, sender, logger, bucket, scheduler, broadcast, owlFilter, settings) 
+            IDevActionHandler devActionHandler) : base(contextManager, contactService, sender, logger, devActionHandler) 
         {
             _contextManager = contextManager;
             _contactService = contactService;
             _sender = sender;
-            _bucket = bucket;
-            _owlFilter = owlFilter;
-            _carouselBuilder = carouselBuilder;
-            _scheduler = scheduler;
             _broadcast = broadcast;
-            _settings = settings;
             _logger = logger;
         }
 

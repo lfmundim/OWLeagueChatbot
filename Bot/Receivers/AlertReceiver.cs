@@ -22,31 +22,17 @@ namespace OWLeagueBot.Receivers
         private readonly IContactExtension _contactService;
         private readonly ISender _sender;
         private readonly ILogger _logger;
-        private readonly IBucketExtension _bucket;
-        private readonly ISchedulerExtension _scheduler;
-        private readonly IBroadcastExtension _broadcast;
-        private readonly IOWLFilter _owlFilter;
-        private readonly Settings _settings;
 
         public AlertReceiver(IContextManager contextManager, 
                              IContactExtension contactService, 
                              ISender sender, 
                              ILogger logger, 
-                             IBucketExtension bucket,
-                             ISchedulerExtension scheduler, 
-                             IBroadcastExtension broadcast, 
-                             IOWLFilter owlFilter, 
-                             Settings settings) : base(contextManager, contactService, sender, logger, bucket, scheduler, broadcast, owlFilter, settings)
+                             IDevActionHandler devActionHandler) : base(contextManager, contactService, sender, logger, devActionHandler)
         {
             _contextManager = contextManager;
             _contactService = contactService;
             _sender = sender;
             _logger = logger;
-            _bucket = bucket;
-            _scheduler = scheduler;
-            _broadcast = broadcast;
-            _owlFilter = owlFilter;
-            _settings = settings;
         }
 
         protected override async Task ReceiveMessageAsync(Message message, Contact contact, UserContext userContext, CancellationToken cancellationToken)

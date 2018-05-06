@@ -28,10 +28,12 @@ namespace OWLeagueBot.Tests.Extensions
             cancellationToken = UnitTestBuilder.GetCancellationToken();
         }
         [Test, Category("Short")]
-        public async Task UpdateDistributionListAsync()
+        [TestCase("unitTests", true)]
+        [TestCase(" ", false)]
+        public async Task UpdateDistributionListAsync(string test, bool expectedResult)
         {
-            var result = await broadcastExtension.UpdateDistributionListAsync("unitTests", node.ToIdentity(), cancellationToken);
-            result.ShouldBe(true);
+            var result = await broadcastExtension.UpdateDistributionListAsync(test, node.ToIdentity(), cancellationToken);
+            result.ShouldBe(expectedResult);
         }
     }
 }

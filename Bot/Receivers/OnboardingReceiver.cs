@@ -24,37 +24,23 @@ namespace OWLeagueBot.Receivers
         private readonly IContactExtension _contactService;
         private readonly ISender _sender;
         private readonly ILogger _logger;
-        private readonly IBucketExtension _bucket;
-        private readonly IOWLFilter _owlFilter;
         private readonly ICarouselBuilder _carouselBuilder;
-        private readonly ISchedulerExtension _scheduler;
-        private readonly IBroadcastExtension _broadcast;
         private readonly IQuickReplyBuilder _quickReplyBuilder;
-        private readonly Settings _settings;
 
         public OnboardingReceiver(IContextManager contextManager, 
                                   IContactExtension contactService, 
                                   ISender sender,
                                   ILogger logger,
-                                  IBucketExtension bucket,
-                                  IOWLFilter owlFilter, 
                                   ICarouselBuilder carouselBuilder,
-                                  ISchedulerExtension scheduler,
-                                  IBroadcastExtension broadcast, 
                                   IQuickReplyBuilder quickReplyBuilder, 
-                                  Settings settings) : base(contextManager, contactService, sender, logger, bucket, scheduler, broadcast, owlFilter, settings)
+                                  IDevActionHandler devActionHandler) : base(contextManager, contactService, sender, logger, devActionHandler)
         {
             _contextManager = contextManager;
             _contactService = contactService;
             _sender = sender;
             _logger = logger;
-            _bucket = bucket;
-            _scheduler = scheduler;
-            _broadcast = broadcast;
-            _owlFilter = owlFilter;
             _carouselBuilder = carouselBuilder;
             _quickReplyBuilder = quickReplyBuilder;
-            _settings = settings;
         }
 
         protected override async Task ReceiveMessageAsync(Message message, Contact contact, UserContext userContext, CancellationToken cancellationToken)

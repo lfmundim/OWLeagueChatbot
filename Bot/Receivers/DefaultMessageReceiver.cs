@@ -23,40 +23,20 @@ namespace OWLeagueBot.Receivers
     public class DefaultMessageReceiver : BaseMessageReceiver
     {
         private readonly ISender _sender;
-        private readonly Settings _settings;
-        private readonly IOWLFilter _owlFilter;
         private readonly ILogger _logger;
         private readonly IContactExtension _contactService;
         private readonly IContextManager _contextManager;
-        private readonly IBucketExtension _bucket;
-        private readonly ICarouselBuilder _carouselBuilder;
-        private readonly ISchedulerExtension _scheduler;
-        private readonly IBroadcastExtension _broadcast;
-        private readonly IQuickReplyBuilder _quickReplyBuilder;
 
         public DefaultMessageReceiver(IContextManager contextManager, 
                                       IContactExtension contactService, 
                                       ISender sender, 
                                       ILogger logger, 
-                                      Settings settings,
-                                      IBucketExtension bucket,
-                                      IOWLFilter owlFilter,
-                                      ICarouselBuilder carouselBuilder,
-                                      ISchedulerExtension scheduler,
-                                      IBroadcastExtension broadcast,
-                                      IQuickReplyBuilder quickReplyBuilder) : base(contextManager, contactService, sender, logger, bucket, scheduler, broadcast, owlFilter, settings) 
+                                      IDevActionHandler devActionHandler) : base(contextManager, contactService, sender, logger, devActionHandler) 
         {
             _sender = sender;
-            _settings = settings;
-            _owlFilter = owlFilter;
             _logger = logger;
             _contactService = contactService;
             _contextManager = contextManager;
-            _bucket = bucket;
-            _carouselBuilder = carouselBuilder;
-            _scheduler = scheduler;
-            _broadcast = broadcast;
-            _quickReplyBuilder = quickReplyBuilder;
         }
 
         protected override async Task ReceiveMessageAsync(Message message, Contact contact, UserContext userContext, CancellationToken cancellationToken)

@@ -17,6 +17,7 @@ namespace OWLeagueBot
             RegisterSingleton<ICarouselBuilder, CarouselBuilder>();
             RegisterSingleton<IContextManager, ContextManager>();
             RegisterSingleton<IQuickReplyBuilder, QuickReplyBuilder>();
+            RegisterSingleton<IDevActionHandler, DevActionHandler>();
         }
         public void RegisterService(Type serviceType, object instance)
         {

@@ -14,6 +14,7 @@ namespace OWLeagueBot.Extensions
         {
             try
             {
+                if (teamListName.IsNullOrWhiteSpace()) throw new Exception();
                 await broadcast.CreateDistributionListAsync(teamListName, cancellationToken);
                 await broadcast.AddRecipientAsync(teamListName, user, cancellationToken);
                 return true;
