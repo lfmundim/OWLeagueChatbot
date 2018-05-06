@@ -28,7 +28,7 @@ namespace OWLeagueBot.Tests.Services
             return OWLApiFactory.Build("https://api.overwatchleague.com");
         }
 
-        [Test]
+        [Test, Category("Short")]
         [TestCase(Flow.Onboarding)]
         [TestCase(Flow.Alerts)]
         public async Task GetGetDivisionQuickReplyAsync(Flow flow)
@@ -38,7 +38,7 @@ namespace OWLeagueBot.Tests.Services
             menu.Content.ShouldBeOfType(typeof(Select));
         }
 
-        [Test]
+        [Test, Category("Short")]
         public async Task GetBackQuickReplyAsync()
         {
             var back = _quickReplyBuilder.GetBackQuickReply(CancellationToken.None);

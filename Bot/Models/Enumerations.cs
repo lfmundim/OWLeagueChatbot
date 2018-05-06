@@ -12,5 +12,17 @@ namespace OWLeagueBot.Models
                               ShanghaiDragons = 4408, SeoulDynasty = 4409, LondonSpitfire = 4410 };
         public enum DivisionIds { PacificDivision = 80, AtlanticDivision = 79, None = 0 };
         public enum Flow { Onboarding, MainMenu, MySchedule, News, Alerts, Standings};
+        public static DivisionIds GetDivisionFromText(string text)
+        {
+            switch (text)
+            {
+                case "79":
+                    return DivisionIds.AtlanticDivision;
+                case "80":
+                    return DivisionIds.PacificDivision;
+                default:
+                    return DivisionIds.None;
+            }
+        }
     }
 }

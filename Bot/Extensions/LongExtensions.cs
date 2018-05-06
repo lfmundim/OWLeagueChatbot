@@ -16,5 +16,11 @@ namespace OWLeagueBot.Extensions
             }
             else return DateTime.UtcNow;
         }
+        public static DateTime ConvertLongIntoDateTime(this long number)
+        {
+            var start = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
+            var date = start.AddMilliseconds((long)number);
+            return date;
+        }
     }
 }

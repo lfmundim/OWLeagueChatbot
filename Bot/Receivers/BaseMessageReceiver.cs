@@ -70,7 +70,7 @@ namespace OWLeagueBot.Receivers
                 }
                 else
                 {
-                    await SendDelayedComposing(message.From, 2000, cancellationToken);
+                    await _sender.SendDelayedComposingAsync(message.From, 2000, cancellationToken);
                     await ReceiveMessageAsync(message, contact, userContext, cancellationToken);
                 }
             }
@@ -80,23 +80,6 @@ namespace OWLeagueBot.Receivers
             }
         }
 
-        private bool IsTextCommand(string v)
-        {
-            return v.Contains("#");
-        }
-
         protected abstract Task ReceiveMessageAsync(Message message, Contact contact, UserContext userContext, CancellationToken cancellationToken);
-        protected async Task SendDelayedComposing(Node destination, int millisecondsDelay, CancellationToken cancellationToken)
-        {
-            await _sender.SendMessageAsync(
-                new Message
-                {
-                    Id = null,
-                    To = destination,
-                    Content = new ChatState { State = ChatStateEvent.Composing }
-                },
-            cancellationToken);
-            await Task.Delay(millisecondsDelay);
-        }
     }
 }

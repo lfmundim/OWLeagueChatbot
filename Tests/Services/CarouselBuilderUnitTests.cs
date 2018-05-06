@@ -32,7 +32,7 @@ namespace OWLeagueBot.Tests.Services
             return OWLApiFactory.Build("https://api.overwatchleague.com");
         }
 
-        [Test]
+        [Test, Category("Short")]
         [TestCase(DivisionIds.AtlanticDivision)]
         [TestCase(DivisionIds.PacificDivision)]
         public async Task BuildOnboardingTeamCarouselAsync(DivisionIds division)

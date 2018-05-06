@@ -1,5 +1,6 @@
 using Newtonsoft.Json;
 using System.Linq;
+using static OWLeagueBot.Models.Responses.BracketResponse;
 
 namespace OWLeagueBot.Models.Responses
 {
@@ -14,9 +15,6 @@ namespace OWLeagueBot.Models.Responses
         [JsonProperty("scores")]
         public Score[] Scores { get; set; }
 
-        [JsonProperty("conclusionValue")]
-        public long ConclusionValue { get; set; }
-
         [JsonProperty("conclusionStrategy")]
         public string ConclusionStrategy { get; set; }
 
@@ -29,31 +27,10 @@ namespace OWLeagueBot.Models.Responses
         [JsonProperty("games")]
         public GameResponse[] Games { get; set; }
 
-        [JsonProperty("clientHints")]
-        public object[] ClientHints { get; set; }
-
-        [JsonProperty("bracket")]
-        public BracketResponse Bracket { get; set; }
-
-        [JsonProperty("dateCreated")]
-        public long DateCreated { get; set; }
-
-        [JsonProperty("flags")]
-        public object[] Flags { get; set; }
-
-        [JsonProperty("handle")]
-        public string Handle { get; set; }
+        //[JsonProperty("bracket")]
+        //public BracketResponse Bracket { get; set; }
 
         [JsonProperty("startDate")]
         public long? StartDate { get; set; }
-
-        [JsonProperty("endDate")]
-        public long? EndDate { get; set; }
-
-        [JsonProperty("showStartTime")]
-        public bool ShowStartTime { get; set; }
-
-        [JsonProperty("showEndTime")]
-        public bool ShowEndTime { get; set; }
     }
 }

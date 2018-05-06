@@ -2,6 +2,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NUnit.Framework;
 using OWLeagueBot.Services;
 using Shouldly;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace OWLeagueBot.Tests.Services
@@ -14,9 +15,9 @@ namespace OWLeagueBot.Tests.Services
         [OneTimeSetUp]
         public void Config()
         {
-            client = GetClient();
+            client = UnitTestBuilder.GetClient();
         }
-        [Test]
+        [Test, Category("Short")]
         public async Task GetNewsAsync()
         {
             // Arrange
@@ -29,7 +30,7 @@ namespace OWLeagueBot.Tests.Services
             result.Blogs.Length.ShouldBe(5);
         }
 
-        [Test]
+        [Test, Category("Short")]
         public async Task GetRankingAsync()
         {
             // Arrange
@@ -42,7 +43,7 @@ namespace OWLeagueBot.Tests.Services
             result.Content.Length.ShouldBe(12);
         }
 
-        [Test]
+        [Test, Category("Long")]
         [TestCase(4523)]
         [TestCase(4524)]
         [TestCase(4525)]
@@ -69,9 +70,10 @@ namespace OWLeagueBot.Tests.Services
             result.Logo.ShouldNotBeNull();
             result.Name.ShouldNotBeNull();
             result.HomeLocation.ShouldNotBeNull();
+            result.AddressCountry.ShouldNotBeNull();
         }
 
-        [Test]
+        [Test, Category("Short")]
         public async Task GetTeamsAsync()
         {
             // Arrange
@@ -82,11 +84,6 @@ namespace OWLeagueBot.Tests.Services
             // Assert
             result.ShouldNotBeNull();
             result.Competitors.Length.ShouldBe(12);
-        }
-
-        private IOWLApiService GetClient()
-        {
-            return OWLApiFactory.Build("https://api.overwatchleague.com");
         }
     }
 }

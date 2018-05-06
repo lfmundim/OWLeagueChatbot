@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Lime.Messaging.Resources;
 using Lime.Protocol;
 using NLog;
+using OWLeagueBot.Extensions;
 using OWLeagueBot.Models;
 using OWLeagueBot.Services;
 using Take.Blip.Client;
@@ -59,11 +60,10 @@ namespace OWLeagueBot.Receivers
         protected override async Task ReceiveMessageAsync(Message message, Contact contact, UserContext userContext, CancellationToken cancellationToken)
         {
             var text = message.Content.ToString();
-            await SendDelayedComposing(message.From, 2000, cancellationToken);
             if (userContext.FirstInteraction)
             {
                 await _sender.SendMessageAsync("Hey there! I’m Emily! I’m here to help you keep track of what is going on in the Overwatch League!", message.From, cancellationToken);
-                await SendDelayedComposing(message.From, 2000, cancellationToken);
+                await _sender.SendDelayedComposingAsync(message.From, 2000, cancellationToken);
                 var menu = _quickReplyBuilder.GetDivisionQuickReply(Flow.Onboarding, cancellationToken);
                 menu.To = message.From;
                 await _sender.SendMessageAsync(menu, cancellationToken);
@@ -78,19 +78,6 @@ namespace OWLeagueBot.Receivers
                 var carousel = await _carouselBuilder.GetOnboardingTeamCarouselAsync(division, cancellationToken);
                 carousel.To = message.From;
                 await _sender.SendMessageAsync(carousel, cancellationToken);
-            }
-        }
-
-        private static DivisionIds GetDivisionFromText(string text)
-        {
-            switch (text)
-            {
-                case "79":
-                    return DivisionIds.AtlanticDivision;
-                case "80":
-                    return DivisionIds.PacificDivision;
-                default:
-                    return DivisionIds.None;
             }
         }
     }

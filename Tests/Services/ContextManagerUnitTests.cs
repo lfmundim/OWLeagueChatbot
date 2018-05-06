@@ -29,27 +29,17 @@ namespace OWLeagueBot.Tests.Services
         [OneTimeSetUp]
         public void Config()
         {
-            var settings = new Settings();
-            using (StreamReader r = new StreamReader("../../../settings.json"))
-            {
-                string json = r.ReadToEnd();
-                settings = JsonConvert.DeserializeObject<Settings>(json);
-            }
-
-            cancellationToken = new CancellationTokenSource(TimeSpan.FromSeconds(30)).Token;
-            var builder = new BlipClientBuilder().UsingAccessKey(settings.BotIdentifier, settings.BotAccessKey).UsingRoutingRule(Lime.Messaging.Resources.RoutingRule.Instance);
-            _sender = builder.Build();
+            var settings = UnitTestBuilder.GetSettings();
+            cancellationToken = UnitTestBuilder.GetCancellationToken();
+            _sender = UnitTestBuilder.GetSender();
             _bucket = new BucketExtension(_sender);
             _contextManager = new ContextManager(_bucket);
-            node = new Node()
-            {
-                Domain = "UnitTests.io",
-                Name = "testUser"
-            };
+            node = UnitTestBuilder.GetUserNode();
+
             TypeUtil.RegisterDocument<UserContext>();
         }
 
-        [Test]
+        [Test, Category("Short")]
         public async Task GetBucketKey()
         {
             var key = _contextManager.GetBucketKey(node);
@@ -57,7 +47,7 @@ namespace OWLeagueBot.Tests.Services
             key.ShouldBe("testUser_UserContext");
         }
 
-        [Test]
+        [Test, Category("Short")]
         public async Task SetUserContextAsync()
         {
             try
@@ -76,7 +66,7 @@ namespace OWLeagueBot.Tests.Services
             }
         }
 
-        [Test]
+        [Test, Category("Short")]
         public async Task GetUserContextAsync()
         {
             var context = await _contextManager.GetUserContextAsync(node, cancellationToken);

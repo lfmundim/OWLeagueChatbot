@@ -12,17 +12,25 @@ namespace OWLeagueBot.Extensions
 {
     public static class SchedulerExtensions
     {
-        public static async Task UpdateBroadcastMessagesAsync(this ISchedulerExtension schedulerExtension, IOWLFilter _owlFilter, Settings settings)
+        public static async Task<bool> UpdateBroadcastMessagesAsync(this ISchedulerExtension schedulerExtension, IOWLFilter _owlFilter, Settings settings)
         {
-            foreach (TeamIds t in MyConstants.AllTeams)
+            try
             {
-                var futureMatches = await _owlFilter.GetFutureMatchesAsync(t);
-                foreach (ScheduleResponse s in futureMatches)
+                foreach (TeamIds t in MyConstants.AllTeams)
                 {
-                    var message = BuildBroadcastMessage(t, s, settings);
-                    var time = GetDateTimeOffset(s);
-                    await schedulerExtension.ScheduleMessageAsync(message, time);
+                    var futureMatches = await _owlFilter.GetFutureMatchesAsync(t);
+                    foreach (ScheduleResponse s in futureMatches)
+                    {
+                        var message = BuildBroadcastMessage(t, s, settings);
+                        var time = GetDateTimeOffset(s);
+                        await schedulerExtension.ScheduleMessageAsync(message, time);
+                    }
                 }
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
             }
         }
 
