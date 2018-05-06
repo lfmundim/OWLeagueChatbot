@@ -15,16 +15,13 @@ namespace OWLeagueBot.Services
     public class CarouselBuilder : ICarouselBuilder
     {
         private readonly IOWLFilter _owlFilter;
-        private readonly ISender _sender;
 
-        public CarouselBuilder(IOWLFilter owlFilter, ISender sender)
+        public CarouselBuilder(IOWLFilter owlFilter)
         {
             _owlFilter = owlFilter;
-            _sender = sender;
         }
-        public async Task SendOnboardingTeamCarouselAsync(Message message, CancellationToken cancellationToken)
+        public async Task<Message> GetOnboardingTeamCarouselAsync(DivisionIds division, CancellationToken cancellationToken)
         {
-            var division = GetDivisionFromText(message.Content.ToString());
             var divisionTeams = await _owlFilter.GetTeamsByDivisionAsync(division);
             var itemList = GetItemListFromTeams(divisionTeams, Flow.Onboarding);
             var menu = new DocumentCollection
@@ -35,10 +32,9 @@ namespace OWLeagueBot.Services
             };
             var menuMessage = new Message()
             {
-                Content = menu,
-                To = message.From
+                Content = menu
             };
-            await _sender.SendMessageAsync(menuMessage, cancellationToken);
+            return menuMessage;
         }
 
         private List<DocumentSelect> GetItemListFromTeams(CompetitorElement[] divisionTeams, Flow flowIdentity)
@@ -81,8 +77,6 @@ namespace OWLeagueBot.Services
             {
                 case Flow.Onboarding:
                     return "#SelectMainTeam_";
-                case Flow.MainMenu:
-                    return "#MainMenu_";
                 case Flow.MySchedule:
                     return "#MySchedule_";
                 case Flow.News:
@@ -91,8 +85,9 @@ namespace OWLeagueBot.Services
                     return "#Alerts_";
                 case Flow.Standings:
                     return "#Standings_";
+                case Flow.MainMenu:
                 default:
-                    return "";
+                    return "#MainMenu_";
             }
         }
 
@@ -101,22 +96,8 @@ namespace OWLeagueBot.Services
             switch (flowIdentity)
             {
                 case Flow.Onboarding:
+                default:
                     return "This one!";
-                default:
-                    return "";
-            }
-        }
-
-        private static DivisionIds GetDivisionFromText(string text)
-        {
-            switch (text)
-            {
-                case "79":
-                    return DivisionIds.AtlanticDivision;
-                case "80":
-                    return DivisionIds.PacificDivision;
-                default:
-                    return DivisionIds.None;
             }
         }
     }

@@ -72,7 +72,23 @@ namespace OWLeagueBot.Receivers
             {
                 userContext.TeamDivision = text.Split('_')[1];
                 await _sender.SendMessageAsync("And which team is it?", message.From, cancellationToken);
-                await _carouselBuilder.SendOnboardingTeamCarouselAsync(message, cancellationToken);
+                var division = GetDivisionFromText(message.Content.ToString());
+                var carousel = await _carouselBuilder.GetOnboardingTeamCarouselAsync(division, cancellationToken);
+                carousel.To = message.From;
+                await _sender.SendMessageAsync(carousel, cancellationToken);
+            }
+        }
+
+        private static DivisionIds GetDivisionFromText(string text)
+        {
+            switch (text)
+            {
+                case "79":
+                    return DivisionIds.AtlanticDivision;
+                case "80":
+                    return DivisionIds.PacificDivision;
+                default:
+                    return DivisionIds.None;
             }
         }
     }

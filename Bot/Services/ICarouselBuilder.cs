@@ -4,11 +4,12 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using static OWLeagueBot.Models.Enumerations;
 
 namespace OWLeagueBot.Services
 {
     public interface ICarouselBuilder
     {
-        Task SendOnboardingTeamCarouselAsync(Message message, CancellationToken cancellationToken);
+        Task<Message> GetOnboardingTeamCarouselAsync(DivisionIds division, CancellationToken cancellationToken);
     }
 }
