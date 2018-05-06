@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 using static OWLeagueBot.Models.Enumerations;
 using OWLeagueBot.Services;
 
-namespace OWLeagueBot.Tests
+namespace OWLeagueBot.Tests.Services
 {
     [TestFixture]
     public class CarouselBuilderUnitTests

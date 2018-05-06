@@ -9,7 +9,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using static OWLeagueBot.Models.Enumerations;
 
-namespace OWLeagueBot.Tests
+namespace OWLeagueBot.Tests.Services
 {
     [TestFixture]
     public class QuickReplyBuilderUnitTests
@@ -33,7 +33,7 @@ namespace OWLeagueBot.Tests
         [TestCase(Flow.Alerts)]
         public async Task GetGetDivisionQuickReplyAsync(Flow flow)
         {
-            var menu = await _quickReplyBuilder.GetDivisionQuickReplyAsync(flow, CancellationToken.None);
+            var menu = _quickReplyBuilder.GetDivisionQuickReply(flow, CancellationToken.None);
             menu.ShouldNotBeNull();
             menu.Content.ShouldBeOfType(typeof(Select));
         }
@@ -41,7 +41,7 @@ namespace OWLeagueBot.Tests
         [Test]
         public async Task GetBackQuickReplyAsync()
         {
-            var back = await _quickReplyBuilder.GetBackQuickReplyAsync(CancellationToken.None);
+            var back = _quickReplyBuilder.GetBackQuickReply(CancellationToken.None);
             back.ShouldNotBeNull();
             back.Content.ShouldBeOfType(typeof(Select));
         }

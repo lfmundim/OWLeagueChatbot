@@ -16,7 +16,7 @@ namespace OWLeagueBot.Services
         public QuickReplyBuilder()
         {
         }
-        public async Task<Message> GetDivisionQuickReplyAsync(Flow flow, CancellationToken cancellationToken)
+        public Message GetDivisionQuickReply(Flow flow, CancellationToken cancellationToken)
         {
             try
             {
@@ -38,7 +38,7 @@ namespace OWLeagueBot.Services
                 throw;
             }
         }
-        public async Task<Message> GetBackQuickReplyAsync(CancellationToken cancellationToken)
+        public Message GetBackQuickReply(CancellationToken cancellationToken)
         {
             var back = new Message()
             {

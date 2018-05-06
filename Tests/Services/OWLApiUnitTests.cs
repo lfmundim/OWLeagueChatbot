@@ -4,7 +4,7 @@ using OWLeagueBot.Services;
 using Shouldly;
 using System.Threading.Tasks;
 
-namespace OWLeagueBot.Tests
+namespace OWLeagueBot.Tests.Services
 {
     [TestFixture]
     public class OWLApiUnitTests

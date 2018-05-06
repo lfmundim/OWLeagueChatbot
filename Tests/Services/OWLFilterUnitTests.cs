@@ -7,7 +7,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Threading.Tasks;
 using static OWLeagueBot.Models.Enumerations;
 
-namespace OWLeagueBot.Tests
+namespace OWLeagueBot.Tests.Services
 {
     [TestFixture]
     public class OWLFilterUnitTests
