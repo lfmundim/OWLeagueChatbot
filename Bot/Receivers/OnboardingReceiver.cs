@@ -56,7 +56,7 @@ namespace OWLeagueBot.Receivers
                 userContext.FirstInteraction = false;
                 await _contextManager.SetUserContextAsync(message.From, userContext, cancellationToken);
             }
-            else if (!text.Equals("#Onboarding_0"))
+            else //if (!text.Equals("#Onboarding_0"))
             {
                 userContext.TeamDivision = text.Split('_')[1];
                 await _sender.SendMessageAsync("And which team is it?", message.From, cancellationToken);
