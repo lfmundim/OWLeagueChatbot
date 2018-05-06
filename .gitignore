@@ -289,3 +289,6 @@ __pycache__/
 
 # Chatbot settings
 Bot/application.json
+Tests/Settings.cs
+
+# NUnit results
