@@ -10,7 +10,7 @@ namespace OWLeagueBot.Services
 {
     public interface IQuickReplyBuilder
     {
-        Task SendDivisionQuickReplyAsync(Message message, Flow flow, CancellationToken cancellationToken);
-        Task SendBackQuickReplyAsync(Message message, CancellationToken cancellationToken);
+        Task<Message> GetDivisionQuickReplyAsync(Flow flow, CancellationToken cancellationToken);
+        Task<Message> GetBackQuickReplyAsync(CancellationToken cancellationToken);
     }
 }

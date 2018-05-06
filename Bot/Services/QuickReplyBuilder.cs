@@ -13,32 +13,35 @@ namespace OWLeagueBot.Services
 {
     public class QuickReplyBuilder : IQuickReplyBuilder
     {
-        private readonly ISender _sender;
-
-        public QuickReplyBuilder(ISender sender)
+        public QuickReplyBuilder()
         {
-            _sender = sender;
         }
-        public async Task SendDivisionQuickReplyAsync(Message message, Flow flow, CancellationToken cancellationToken)
+        public async Task<Message> GetDivisionQuickReplyAsync(Flow flow, CancellationToken cancellationToken)
         {
-            var prefix = GetPrefixFromFlow(flow);
-            var menu = new Message()
+            try
             {
-                To = message.From,
-                Content = new Select()
+                if (flow != Flow.Onboarding && flow != Flow.Alerts) throw new Exception();
+                var prefix = GetPrefixFromFlow(flow);
+                var menu = new Message()
                 {
-                    Text = flow == Flow.Onboarding ? "So, tell me, which division is the team you cheer for on?" : "Which division’s alerts do you wish to manage?",
-                    Scope = SelectScope.Immediate,
-                    Options = GetOptionsList(prefix)
-                }
-            };
-            await _sender.SendMessageAsync(menu, cancellationToken);
+                    Content = new Select()
+                    {
+                        Text = flow == Flow.Onboarding ? "So, tell me, which division is the team you cheer for on?" : "Which division’s alerts do you wish to manage?",
+                        Scope = SelectScope.Immediate,
+                        Options = GetOptionsList(prefix)
+                    }
+                };
+                return menu;
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
         }
-        public async Task SendBackQuickReplyAsync(Message message, CancellationToken cancellationToken)
+        public async Task<Message> GetBackQuickReplyAsync(CancellationToken cancellationToken)
         {
             var back = new Message()
             {
-                To = message.From,
                 Content = new Select()
                 {
                     Scope = SelectScope.Immediate,
@@ -52,7 +55,7 @@ namespace OWLeagueBot.Services
                     }
                 }
             };
-            await _sender.SendMessageAsync(back, cancellationToken);
+            return back;
         }
 
         private static SelectOption[] GetOptionsList(string prefix)

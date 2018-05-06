@@ -64,7 +64,9 @@ namespace OWLeagueBot.Receivers
             {
                 await _sender.SendMessageAsync("Hey there! I’m Emily! I’m here to help you keep track of what is going on in the Overwatch League!", message.From, cancellationToken);
                 await SendDelayedComposing(message.From, 2000, cancellationToken);
-                await _quickReplyBuilder.SendDivisionQuickReplyAsync(message, Flow.Onboarding, cancellationToken);
+                var menu = await _quickReplyBuilder.GetDivisionQuickReplyAsync(Flow.Onboarding, cancellationToken);
+                menu.To = message.From;
+                await _sender.SendMessageAsync(menu, cancellationToken);
                 userContext.FirstInteraction = false;
                 await _contextManager.SetUserContextAsync(message.From, userContext, cancellationToken);
             }
