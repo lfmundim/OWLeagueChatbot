@@ -7,7 +7,7 @@ namespace OWLeagueBot.Tests
 {
     public static class Settings
     {
-        public static string BotIdentifier = "blizzconbrasil";
-        public static string BotAccessKey = "dFVnd1dLSUJwSXZrRVFQWEMwTjg=";
+        public static string BotIdentifier = "";
+        public static string BotAccessKey = "";
     }
 }
