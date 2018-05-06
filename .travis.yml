@@ -1,6 +1,8 @@
 ﻿language: csharp
 solution: OWLeagueBot.sln
-dotnet: 2.0
+runtime:
+  - name: netcore
+    version: latest
 install:
   - nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory testrunner
   - dotnet restore OWLeagueBot.sln
