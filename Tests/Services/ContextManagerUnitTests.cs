@@ -1,15 +1,18 @@
 ﻿using Lime.Protocol;
 using Lime.Protocol.Serialization;
+using Newtonsoft.Json;
 using NUnit.Framework;
 using OWLeagueBot.Models;
 using OWLeagueBot.Services;
 using Shouldly;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using Take.Blip.Client;
+using Take.Blip.Client.Activation;
 using Take.Blip.Client.Extensions.Bucket;
 
 namespace OWLeagueBot.Tests.Services
@@ -26,8 +29,15 @@ namespace OWLeagueBot.Tests.Services
         [OneTimeSetUp]
         public void Config()
         {
+            var settings = new Settings();
+            using (StreamReader r = new StreamReader("../../../settings.json"))
+            {
+                string json = r.ReadToEnd();
+                settings = JsonConvert.DeserializeObject<Settings>(json);
+            }
+
             cancellationToken = new CancellationTokenSource(TimeSpan.FromSeconds(30)).Token;
-            var builder = new BlipClientBuilder().UsingAccessKey(Settings.BotIdentifier, Settings.BotAccessKey).UsingRoutingRule(Lime.Messaging.Resources.RoutingRule.Instance);
+            var builder = new BlipClientBuilder().UsingAccessKey(settings.BotIdentifier, settings.BotAccessKey).UsingRoutingRule(Lime.Messaging.Resources.RoutingRule.Instance);
             _sender = builder.Build();
             _bucket = new BucketExtension(_sender);
             _contextManager = new ContextManager(_bucket);
