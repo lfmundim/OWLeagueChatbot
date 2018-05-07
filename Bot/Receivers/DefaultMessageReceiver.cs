@@ -26,22 +26,25 @@ namespace OWLeagueBot.Receivers
         private readonly ILogger _logger;
         private readonly IContactExtension _contactService;
         private readonly IContextManager _contextManager;
+        private readonly INLPService _nlpService;
 
         public DefaultMessageReceiver(IContextManager contextManager, 
                                       IContactExtension contactService, 
                                       ISender sender, 
                                       ILogger logger, 
-                                      IDevActionHandler devActionHandler) : base(contextManager, contactService, sender, logger, devActionHandler) 
+                                      IDevActionHandler devActionHandler,
+                                      INLPService nlpService) : base(contextManager, contactService, sender, logger, devActionHandler) 
         {
             _sender = sender;
             _logger = logger;
             _contactService = contactService;
             _contextManager = contextManager;
+            _nlpService = nlpService;
         }
 
         protected override async Task ReceiveMessageAsync(Message message, Contact contact, UserContext userContext, CancellationToken cancellationToken)
         {
-            
+            await _nlpService.ProcessAsync(message, cancellationToken);
         }
     }
 }

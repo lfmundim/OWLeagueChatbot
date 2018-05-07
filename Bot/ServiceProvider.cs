@@ -18,6 +18,7 @@ namespace OWLeagueBot
             RegisterSingleton<IContextManager, ContextManager>();
             RegisterSingleton<IQuickReplyBuilder, QuickReplyBuilder>();
             RegisterSingleton<IDevActionHandler, DevActionHandler>();
+            RegisterSingleton<INLPService, NLPService>();
         }
         public void RegisterService(Type serviceType, object instance)
         {
