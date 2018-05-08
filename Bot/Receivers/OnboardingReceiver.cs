@@ -59,8 +59,9 @@ namespace OWLeagueBot.Receivers
             else //if (!text.Equals("#Onboarding_0"))
             {
                 userContext.TeamDivision = text.Split('_')[1];
+                await _contextManager.SetUserContextAsync(message.From, userContext, cancellationToken);
                 await _sender.SendMessageAsync("And which team is it?", message.From, cancellationToken);
-                var division = GetDivisionFromText(message.Content.ToString());
+                var division = GetDivisionFromText(userContext.TeamDivision);
                 var carousel = await _carouselBuilder.GetOnboardingTeamCarouselAsync(division, cancellationToken);
                 carousel.To = message.From;
                 await _sender.SendMessageAsync(carousel, cancellationToken);
