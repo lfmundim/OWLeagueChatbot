@@ -26,7 +26,7 @@ namespace OWLeagueBot.Tests.Services
             var scheduler = new SchedulerExtension(sender);
             var contextManager = new ContextManager(bucket);
             var settings = new OWLeagueBot.Settings();
-            devActionHandler = new DevActionHandler(contextManager, bucket, scheduler, filter, settings);
+            devActionHandler = new DevActionHandler(contextManager, bucket, scheduler, filter, settings, sender);
         }
 
         [Test]
