@@ -1,0 +1,7 @@
+Agenda https://s3-sa-east-1.amazonaws.com/i.imgtake.takenet.com.br/im838/im838.jpg
+Alert https://s3-sa-east-1.amazonaws.com/i.imgtake.takenet.com.br/i7m1n/i7m1n.jpg
+FullAgenda https://s3-sa-east-1.amazonaws.com/i.imgtake.takenet.com.br/ipock/ipock.jpg
+FullRank https://s3-sa-east-1.amazonaws.com/i.imgtake.takenet.com.br/imd25/imd25.jpg
+News https://s3-sa-east-1.amazonaws.com/i.imgtake.takenet.com.br/iz14z/iz14z.jpg
+NewsSite https://s3-sa-east-1.amazonaws.com/i.imgtake.takenet.com.br/igm0d/igm0d.jpg
+Rank https://s3-sa-east-1.amazonaws.com/i.imgtake.takenet.com.br/ivtbr/ivtbr.jpg

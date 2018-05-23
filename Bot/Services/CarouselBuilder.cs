@@ -37,6 +37,129 @@ namespace OWLeagueBot.Services
             return menuMessage;
         }
 
+
+        public Message GetMainMenuCarousel()
+        {
+            var carousel = new DocumentCollection();
+            var items = GetMainMenuItems();
+            carousel.Items = items;
+            carousel.Total = items.Length;
+            carousel.ItemType = DocumentSelect.MediaType;
+            return new Message(){ Content = carousel };
+        }
+
+        private DocumentSelect[] GetMainMenuItems()
+        {
+            return new DocumentSelect[]
+            {
+                new DocumentSelect
+                {
+                    Header = new DocumentContainer
+                    {
+                        Value = new MediaLink
+                        {
+                            Title = "Manage Alerts",
+                            Text = "I can remind you when your favourite teams are playing!",
+                            Uri = new Uri("https://s3-sa-east-1.amazonaws.com/i.imgtake.takenet.com.br/i7m1n/i7m1n.jpg"),
+                            AspectRatio = MyConstants.FacebookCarouselAspectRatio
+                        }
+                    },
+                    Options = new DocumentSelectOption[]
+                    {
+                        new DocumentSelectOption
+                        {
+                            Label = new DocumentContainer{ Value = "🔔Alerts" } ,
+                            Value = new DocumentContainer{ Value = "" }
+                        }
+                    }
+                },
+                new DocumentSelect
+                {
+                    Header = new DocumentContainer
+                    {
+                        Value = new MediaLink
+                        {
+                            Title = "My Agenda",
+                            Text = "Let me show you your week!",
+                            Uri = new Uri("https://s3-sa-east-1.amazonaws.com/i.imgtake.takenet.com.br/im838/im838.jpg"),
+                            AspectRatio = MyConstants.FacebookCarouselAspectRatio
+                        }
+                    },
+                    Options = new DocumentSelectOption[]
+                    {
+                        new DocumentSelectOption
+                        {
+                            Label = new DocumentContainer{ Value = "📅Agenda" } ,
+                            Value = new DocumentContainer{ Value = "" }
+                        }
+                    }
+                },
+                new DocumentSelect
+                {
+                    Header = new DocumentContainer
+                    {
+                        Value = new MediaLink
+                        {
+                            Title = "Full Agenda",
+                            Text = "If you want a bigger picture, I can show you everything!",
+                            Uri = new Uri("https://s3-sa-east-1.amazonaws.com/i.imgtake.takenet.com.br/ipock/ipock.jpg"),
+                            AspectRatio = MyConstants.FacebookCarouselAspectRatio
+                        }
+                    },
+                    Options = new DocumentSelectOption[]
+                    {
+                        new DocumentSelectOption
+                        {
+                            Label = new DocumentContainer{ Value = "🗓Full Agenda" } ,
+                            Value = new DocumentContainer{ Value = new MediaLink{ Uri = new Uri("https://overwatchleague.com/en-us/schedule")}}
+                        }
+                    }
+                },
+                new DocumentSelect
+                {
+                    Header = new DocumentContainer
+                    {
+                        Value = new MediaLink
+                        {
+                            Title = "News",
+                            Text = "Kepp up today to everything thats happening on the league!",
+                            Uri = new Uri("https://s3-sa-east-1.amazonaws.com/i.imgtake.takenet.com.br/iz14z/iz14z.jpg"),
+                            AspectRatio = MyConstants.FacebookCarouselAspectRatio
+                        }
+                    },
+                    Options = new DocumentSelectOption[]
+                    {
+                        new DocumentSelectOption
+                        {
+                            Label = new DocumentContainer{ Value = "📰News" } ,
+                            Value = new DocumentContainer{ Value = "" }
+                        }
+                    }
+                },
+                new DocumentSelect
+                {
+                    Header = new DocumentContainer
+                    {
+                        Value = new MediaLink
+                        {
+                            Title = "Standings",
+                            Text = "Want a quick overview of the standings?",
+                            Uri = new Uri("https://s3-sa-east-1.amazonaws.com/i.imgtake.takenet.com.br/ivtbr/ivtbr.jpg"),
+                            AspectRatio = MyConstants.FacebookCarouselAspectRatio
+                        }
+                    },
+                    Options = new DocumentSelectOption[]
+                    {
+                        new DocumentSelectOption
+                        {
+                            Label = new DocumentContainer{ Value = "🏆Standings" } ,
+                            Value = new DocumentContainer{ Value = "" }
+                        }
+                    }
+                }
+            };
+        }
+
         private List<DocumentSelect> GetItemListFromTeams(CompetitorElement[] divisionTeams, Flow flowIdentity)
         {
             var tag = GetTagFromFlow(flowIdentity);

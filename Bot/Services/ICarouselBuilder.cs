@@ -10,6 +10,8 @@ namespace OWLeagueBot.Services
 {
     public interface ICarouselBuilder
     {
+    	Message GetMainMenuCarousel();
         Task<Message> GetOnboardingTeamCarouselAsync(DivisionIds division, CancellationToken cancellationToken);
     }
+
 }
