@@ -1,4 +1,5 @@
 ﻿using Lime.Protocol;
+using OWLeagueBot.Models.Responses;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -12,6 +13,11 @@ namespace OWLeagueBot.Services
     {
     	Message GetMainMenuCarousel();
         Task<Message> GetOnboardingTeamCarouselAsync(DivisionIds division, CancellationToken cancellationToken);
+        Task<Message> GetAgendaCarouselAsync(List<string> teams, CancellationToken cancellationToken);
+        Task<Message> GetAlertTeamCarouselAsync(DivisionIds division, CancellationToken cancellationToken);
+        Task<Message> GetNewsCarouselAsync(NewsResponse news, CancellationToken cancellationToken);
+        Task<Message> GetStandingsCarousel(RankingResponse standings);
     }
+
 
 }

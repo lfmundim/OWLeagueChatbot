@@ -45,9 +45,15 @@ namespace OWLeagueBot.Receivers
 
         protected override async Task ReceiveMessageAsync(Message message, Contact contact, UserContext userContext, CancellationToken cancellationToken)
         {
-            var teamListName = "Alert_" + message.Content.ToString().Split('_')[1];
-            await _broadcast.UpdateDistributionListAsync(teamListName, message.From.ToIdentity(), cancellationToken);
-            await _sender.SendMessageAsync("Awesome! I added you to my list for that team and will notify you of any matches 30mins earlier!", message.From, cancellationToken);
+            if(message.Content.ToString().Contains("SelectMainTeam_"))
+            {
+                var teamTag = message.Content.ToString().Split('_')[1];
+                var teamListName = "Alert_" + teamTag;
+                await _broadcast.UpdateDistributionListAsync(teamListName, message.From.ToIdentity(), cancellationToken);
+                userContext.MainTeam = teamTag;
+                userContext.AlertTeams.Add(teamTag);
+                await _sender.SendMessageAsync("Awesome! I added you to my list for that team and will notify you of any matches 30mins earlier!", message.From, cancellationToken);
+            }
             await _sender.SendDelayedComposingAsync(message.From, 2000, cancellationToken);
             await _sender.SendMessageAsync("What can I help you with?", message.From, cancellationToken);
             var carousel = _carouselBuilder.GetMainMenuCarousel();

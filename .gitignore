@@ -288,7 +288,7 @@ __pycache__/
 *.xsd.cs
 
 # Chatbot settings
-Bot/application.json
+# Bot/application.json
 # Tests/settings.json
 # Tests/Settings.cs
 

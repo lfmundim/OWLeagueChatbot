@@ -38,12 +38,14 @@ namespace OWLeagueBot.Services
                 throw;
             }
         }
-        public Message GetBackQuickReply(CancellationToken cancellationToken)
+
+        public Message GetBackQuickReply()
         {
             var back = new Message()
             {
                 Content = new Select()
                 {
+                    Text = "Or you can go back:",
                     Scope = SelectScope.Immediate,
                     Options = new SelectOption[]
                     {
@@ -56,6 +58,31 @@ namespace OWLeagueBot.Services
                 }
             };
             return back;
+        }
+
+        public Message GetYesNoQuickReply()
+        {
+            var YesNo = new Message()
+            {
+                Content = new Select()
+                {
+                    Scope = SelectScope.Immediate,
+                    Options = new SelectOption[]
+                    {
+                        new SelectOption
+                        {
+                            Text = PlainText.Parse("Yes"),
+                            Value = PlainText.Parse("")
+                        },
+                        new SelectOption
+                        {
+                            Text = PlainText.Parse("No"),
+                            Value = PlainText.Parse("")
+                        }
+                    }
+                }
+            };
+            return YesNo;
         }
 
         private static SelectOption[] GetOptionsList(string prefix)
@@ -88,7 +115,7 @@ namespace OWLeagueBot.Services
                     return "#Onboarding_";
                 case Flow.Alerts:
                 default:
-                    return "#Alerts_";
+                    return "#Alert_";
             }
         }
     }

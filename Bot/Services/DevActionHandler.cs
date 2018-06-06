@@ -41,13 +41,13 @@ namespace OWLeagueBot.Services
                 var action = message.Content.ToString().Trim();
                 action = RemoveDevTag(action);
 
-                if (message.Content.ToString().Trim().Equals("DEVDELETEUSER"))
+                if (action.Equals("DEVDELETEUSER"))
                 {
                     var bucketKey = _contextManager.GetBucketKey(message.From);
                     await _bucket.DeleteAsync(bucketKey);
                     await _sender.SendMessageAsync("DELETION DONE", message.From, cancellationToken);
                 }
-                else if (message.Content.ToString().Trim().Equals("DEVREFRESHMESSAGES"))
+                else if (action.Equals("DEVREFRESHMESSAGES"))
                 {
                     if (message.From.Name.Equals("1700444659974923"))
                     {

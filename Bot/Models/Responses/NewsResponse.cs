@@ -30,6 +30,9 @@ namespace OWLeagueBot.Models.Responses
 
         [JsonProperty("thumbnail")]
         public Thumbnail Thumbnail { get; set; }
+
+        [JsonProperty("defaultUrl")]
+        public string defaultUrl { get; set; }
     }
 
     public partial class Thumbnail

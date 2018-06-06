@@ -1,0 +1,52 @@
+{
+  "identifier": "blizzconbrasil",
+  "accessKey": "dFVnd1dLSUJwSXZrRVFQWEMwTjg=",
+
+  "messageReceivers": [
+    {
+      "type": "DefaultMessageReceiver",
+      "mediaType": "text/plain",
+      "priority": 10
+    },
+    {
+      "type": "SelectMainTeamReceiver",
+      "content": "#SelectMainTeam_|#MainMenu_",
+      "priority": 1
+    },
+    {
+      "type": "OnboardingReceiver",
+      "content": "#Onboarding_|Hey there!",
+      "priority": 1
+    },
+    {
+      "type": "NewsReceiver",
+      "content": "#News",
+      "priority": 1
+    },
+    {
+      "type": "AlertReceiver",
+      "content": "#Alert_",
+      "priority": 1
+    },
+    {
+      "type": "AgendaReceiver",
+      "content": "#Agenda_",
+      "priority": 1
+    },
+    {
+      "type": "StandingsReceiver",
+      "content": "#Standings",
+      "priority": 1
+    }
+  ],
+  "settings": {
+    "OWLEndpoint": "https://api.overwatchleague.com",
+    "OWLLogo": "https://icdn2.digitaltrends.com/image/overwatch-league-720x720.jpg",
+    "OWLTwitch": "https://www.twitch.tv/overwatchleague",
+    "BroadcastDomain": "@broadcast.msging.net",
+    "BroadcastMessageIdPrefix": "Match-Id-"
+  },
+  "settingsType": "Settings",
+  "startupType": "Startup",
+  "serviceProviderType": "ServiceProvider"
+}

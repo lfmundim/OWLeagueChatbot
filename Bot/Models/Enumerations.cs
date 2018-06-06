@@ -24,5 +24,36 @@ namespace OWLeagueBot.Models
                     return DivisionIds.None;
             }
         }
+        public static TeamIds GetTeamIdFromTag(string tag)
+        {
+            switch (tag)
+            {
+                case "GLA":
+                    return TeamIds.LosAngelesGladiators;
+                case "BOS":
+                    return TeamIds.BostonUprising;
+                case "DAL":
+                    return TeamIds.DallasFuel;
+                case "FLA":
+                    return TeamIds.FloridaMayhem;
+                case "HOU":
+                    return TeamIds.HoustonOutlaws;
+                case "LON":
+                    return TeamIds.LondonSpitfire;
+                case "VAL":
+                    return TeamIds.LosAngelesValiant;
+                case "NYE":
+                    return TeamIds.NewYorkExcelsior;
+                case "PHI":
+                    return TeamIds.PhiladelphiaFusion;
+                case "SFS":
+                    return TeamIds.SanFranciscoShock;
+                case "SEO":
+                    return TeamIds.SeoulDynasty;
+                case "SHD":
+                default:
+                    return TeamIds.ShanghaiDragons;
+            }
+        }
     }
 }

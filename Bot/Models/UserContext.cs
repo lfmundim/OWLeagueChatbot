@@ -14,6 +14,7 @@ namespace OWLeagueBot.Models
             FirstInteraction = true;
             MainTeam = string.Empty;
             TeamDivision = string.Empty;
+            AlertTeams = new List<string>();
         }
         [DataMember(Name = "mainteam")]
         public string MainTeam { get; set; }
@@ -21,5 +22,7 @@ namespace OWLeagueBot.Models
         public string TeamDivision { get; set; }
         [DataMember(Name = "firstinteraction")]
         public bool FirstInteraction { get; set; }
+        [DataMember(Name = "alertteams")]
+        public List<string> AlertTeams { get; set; }
     }
 }

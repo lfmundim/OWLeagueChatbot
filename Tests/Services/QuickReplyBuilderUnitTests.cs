@@ -41,7 +41,7 @@ namespace OWLeagueBot.Tests.Services
         [Test, Category("Short")]
         public async Task GetBackQuickReplyAsync()
         {
-            var back = _quickReplyBuilder.GetBackQuickReply(CancellationToken.None);
+            var back = _quickReplyBuilder.GetBackQuickReply();
             back.ShouldNotBeNull();
             back.Content.ShouldBeOfType(typeof(Select));
         }

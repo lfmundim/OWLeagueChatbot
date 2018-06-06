@@ -11,6 +11,7 @@ namespace OWLeagueBot.Services
     public interface IQuickReplyBuilder
     {
         Message GetDivisionQuickReply(Flow flow, CancellationToken cancellationToken);
-        Message GetBackQuickReply(CancellationToken cancellationToken);
+        Message GetBackQuickReply();
+        Message GetYesNoQuickReply();
     }
 }
