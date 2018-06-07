@@ -36,6 +36,34 @@ namespace OWLeagueBot.Tests
             return builder.Build();
         }
 
+        public static IChatbotFlowService GetFlowService()
+        {
+            var sender = GetSender();
+            var owlFilter = new OWLFilter(GetClient());
+            var carouselBuilder = new CarouselBuilder(owlFilter);
+            var quickReplyBuilder = new QuickReplyBuilder();
+            var broadcast = new BroadcastExtension(sender);
+            var bucket = new BucketExtension(sender);
+            var contextManager = new ContextManager(bucket);
+
+            return new ChatbotFlowService
+            (
+                carouselBuilder,
+                quickReplyBuilder,
+                broadcast,
+                contextManager,
+                owlFilter,
+                sender
+            );
+        }
+
+        public static IContextManager GetContextManager()
+        {
+            var sender = GetSender();
+            var bucket = new BucketExtension(sender);
+            return new ContextManager(bucket);
+        }
+
         public static Node GetUserNode() => new Node() { Domain = "UnitTests.io", Name = "testUser" };
         public static Node GetBotNode() => new Node() { Domain = "msging.net", Name = "blizzconbrasil" };
         public static IOWLApiService GetClient() => OWLApiFactory.Build("https://api.overwatchleague.com");

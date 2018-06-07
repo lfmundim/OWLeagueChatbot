@@ -37,7 +37,7 @@ namespace OWLeagueBot.Tests.Services
         [TestCase(DivisionIds.PacificDivision)]
         public async Task BuildOnboardingTeamCarouselAsync(DivisionIds division)
         {
-            var carousel = await _carouselBuilder.GetOnboardingTeamCarouselAsync(division, CancellationToken.None);
+            var carousel = await _carouselBuilder.GetCarousel(division, CancellationToken.None, Flow.Alerts);
             carousel.Content.ShouldNotBeNull();
         }
     }

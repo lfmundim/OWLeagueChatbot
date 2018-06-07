@@ -12,11 +12,10 @@ namespace OWLeagueBot.Services
     public interface ICarouselBuilder
     {
     	Message GetMainMenuCarousel();
-        Task<Message> GetOnboardingTeamCarouselAsync(DivisionIds division, CancellationToken cancellationToken);
-        Task<Message> GetAgendaCarouselAsync(List<string> teams, CancellationToken cancellationToken);
-        Task<Message> GetAlertTeamCarouselAsync(DivisionIds division, CancellationToken cancellationToken);
-        Task<Message> GetNewsCarouselAsync(NewsResponse news, CancellationToken cancellationToken);
-        Task<Message> GetStandingsCarousel(RankingResponse standings);
+        Task<Message> GetCarousel(DivisionIds division, CancellationToken cancellationToken, Flow flow);
+        Task<Message> GetCarousel(List<string> teams, CancellationToken cancellationToken);
+        Task<Message> GetCarousel(NewsResponse news, CancellationToken cancellationToken);
+        Task<Message> GetCarousel(RankingResponse standings);
     }
 
 
