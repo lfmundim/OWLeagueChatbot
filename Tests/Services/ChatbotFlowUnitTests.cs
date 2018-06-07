@@ -186,8 +186,8 @@ namespace OWLeagueBot.Tests.Services
         }
 
         [Test] // TODO
-        [TestCase("Main", "")]
         [TestCase("Add_", "DAL")]
+        [TestCase("Main", "")]
         [TestCase("Remove_", "DAL")]
         [TestCase("Division_79", "")]
         [TestCase("Division_80", "")]
@@ -197,7 +197,7 @@ namespace OWLeagueBot.Tests.Services
             {
                 From = UnitTestBuilder.GetUserNode(),
                 To = UnitTestBuilder.GetBotNode(),
-                Content = PlainText.Parse(flow)
+                Content = PlainText.Parse(flow+teamTag)
             };
             var team = flow.Contains("Remove") ? teamTag : string.Empty;
             var userContext = new UserContext
