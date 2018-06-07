@@ -151,7 +151,7 @@ namespace OWLeagueBot.Tests.Services
             }
         }
 
-        [Test] //TODO
+        [Test] 
         [TestCase(true, "")]
         [TestCase(false, "79")]
         [TestCase(false, "80")]
@@ -185,28 +185,46 @@ namespace OWLeagueBot.Tests.Services
             }
         }
 
-        // [Test] // TODO
-        // public async Task AlertReceiverUnitTest()
-        // {
-        //     var message = new Message
-        //     {
-        //         From = UnitTestBuilder.GetUserNode(),
-        //         To = UnitTestBuilder.GetBotNode(),
-        //         Content = PlainText.Parse("UnitTests")
-        //     };
-        //     bool success = false;
-        //     try
-        //     {
-        //         success = await flowService.SendAlertFlowAsync();
-        //     }
-        //     catch(Exception ex)
-        //     {
-        //         ex.ShouldBeNull();
-        //     }
-        //     finally
-        //     {
-        //         success.ShouldBeTrue();
-        //     }
-        // }
+        [Test] // TODO
+        [TestCase("Main", "")]
+        [TestCase("Add_", "DAL")]
+        [TestCase("Remove_", "DAL")]
+        [TestCase("Division_79", "")]
+        [TestCase("Division_80", "")]
+        public async Task AlertReceiverUnitTest(string flow, string teamTag)
+        {
+            var message = new Message
+            {
+                From = UnitTestBuilder.GetUserNode(),
+                To = UnitTestBuilder.GetBotNode(),
+                Content = PlainText.Parse(flow)
+            };
+            var team = flow.Contains("Remove") ? teamTag : string.Empty;
+            var userContext = new UserContext
+            {
+                AlertTeams = new List<string>
+                {
+                    { team }
+                }
+            };
+            bool success = false;
+            try
+            {
+                success = await flowService.SendAlertFlowAsync(userContext, message, CancellationToken.None);
+                userContext = await contextManager.GetUserContextAsync(message.From, CancellationToken.None);
+            }
+            catch(Exception ex)
+            {
+                ex.ShouldBeNull();
+            }
+            finally
+            {
+                success.ShouldBeTrue();
+                if(flow.Contains("Remove"))
+                    userContext.AlertTeams.ShouldNotContain(teamTag);
+                else if(flow.Contains("Add"))
+                    userContext.AlertTeams.ShouldContain(teamTag);
+            }
+        }
     }
 }
