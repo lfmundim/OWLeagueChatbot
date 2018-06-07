@@ -4,6 +4,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Lime.Messaging.Contents;
 using Lime.Protocol;
+using Lime.Protocol.Serialization;
 using NUnit.Framework;
 using OWLeagueBot.Models;
 using OWLeagueBot.Services;
@@ -22,6 +23,7 @@ namespace OWLeagueBot.Tests.Services
         {
             flowService = UnitTestBuilder.GetFlowService();
             contextManager = UnitTestBuilder.GetContextManager();
+            TypeUtil.RegisterDocument<UserContext>();
         }
 
         [Test]

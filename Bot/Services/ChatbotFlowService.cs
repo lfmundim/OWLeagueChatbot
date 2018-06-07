@@ -263,6 +263,7 @@ namespace OWLeagueBot.Services
                     await _broadcastExtension.UpdateDistributionListAsync(teamListName, message.From.ToIdentity(), cancellationToken);
                     userContext.MainTeam = teamTag;
                     userContext.AlertTeams.Add(teamTag);
+                    await _contextManager.SetUserContextAsync(message.From, userContext, cancellationToken);
                     await _sender.SendMessageAsync("Awesome! I added you to my list for that team and will notify you of any matches 30mins earlier!", message.From, cancellationToken);
                 }
                 await _sender.SendDelayedComposingAsync(message.From, 2000, cancellationToken);
