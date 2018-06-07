@@ -151,29 +151,39 @@ namespace OWLeagueBot.Tests.Services
             }
         }
 
-        // [Test] //TODO
-        // public async Task OnboardingReceiverUnitTest()
-        // {
-        //     var message = new Message
-        //     {
-        //         From = UnitTestBuilder.GetUserNode(),
-        //         To = UnitTestBuilder.GetBotNode(),
-        //         Content = PlainText.Parse("UnitTests")
-        //     };
-        //     bool success = false;
-        //     try
-        //     {
-        //         success = await flowService.SendOnboardingFlowAsync();
-        //     }
-        //     catch(Exception ex)
-        //     {
-        //         ex.ShouldBeNull();
-        //     }
-        //     finally
-        //     {
-        //         success.ShouldBeTrue();
-        //     }
-        // }
+        [Test] //TODO
+        [TestCase(true, "")]
+        [TestCase(false, "79")]
+        [TestCase(false, "80")]
+        public async Task OnboardingReceiverUnitTest(bool isFirst, string teamDivision)
+        {
+            var message = new Message
+            {
+                From = UnitTestBuilder.GetUserNode(),
+                To = UnitTestBuilder.GetBotNode(),
+                Content = PlainText.Parse("UnitTest_"+teamDivision)
+            };
+            var userContext = new UserContext
+            {
+                FirstInteraction = isFirst
+            };
+            bool success = false;
+            try
+            {
+                success = await flowService.SendOnboardingFlowAsync(userContext, message, CancellationToken.None);
+                userContext = await contextManager.GetUserContextAsync(message.From, CancellationToken.None);
+            }
+            catch(Exception ex)
+            {
+                ex.ShouldBeNull();
+            }
+            finally
+            {
+                success.ShouldBeTrue();
+                if(!isFirst)
+                    userContext.TeamDivision.ShouldBe(teamDivision);
+            }
+        }
 
         // [Test] // TODO
         // public async Task AlertReceiverUnitTest()
