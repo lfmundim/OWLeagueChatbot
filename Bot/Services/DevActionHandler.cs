@@ -41,15 +41,15 @@ namespace OWLeagueBot.Services
                 var action = message.Content.ToString().Trim();
                 action = RemoveDevTag(action);
 
-                if (action.Equals("DEVDELETEUSER"))
+                if (action.Equals("")) //DevAction to delete current user from the bot's context
                 {
                     var bucketKey = _contextManager.GetBucketKey(message.From);
                     await _bucket.DeleteAsync(bucketKey);
                     await _sender.SendMessageAsync("DELETION DONE", message.From, cancellationToken);
                 }
-                else if (action.Equals("DEVREFRESHMESSAGES"))
+                else if (action.Equals("")) //DevAction to refresh scheduled messages. TODO: automate
                 {
-                    if (message.From.Name.Equals("1700444659974923"))
+                    if (message.From.Name.Equals("")) //To make sure no one exploits this, set the Main Dev identifier from facebook here
                     {
                         await _scheduler.UpdateBroadcastMessagesAsync(_owlFilter, _settings);
                         await _sender.SendMessageAsync("UPDATE DONE", message.From, cancellationToken);
