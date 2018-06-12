@@ -41,7 +41,7 @@ namespace OWLeagueBot.Receivers
 
         protected override async Task ReceiveMessageAsync(Message message, Contact contact, UserContext userContext, CancellationToken cancellationToken)
         {
-            
+            await _sender.SendMessageAsync("I'm sorry, I'm just a robot, I didn't quite catch that 😓", message.From, cancellationToken);
         }
     }
 }

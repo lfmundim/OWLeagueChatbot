@@ -6,4 +6,4 @@ clean:
 	dotnet clean ./Bot/OWLeagueBot.csproj
 	dotnet clean ./Tests/OWLeagueBot.Tests.csproj
 run:
-	dotnet run ./Bot/OWLeagueBot.csproj
+	dotnet run --project ./Bot/OWLeagueBot.csproj

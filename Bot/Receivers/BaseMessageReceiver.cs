@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Lime.Messaging.Contents;
 using Lime.Messaging.Resources;
 using Lime.Protocol;
+using Lime.Protocol.Network;
 using NLog;
 using OWLeagueBot.Extensions;
 using OWLeagueBot.Models;
@@ -15,6 +16,7 @@ using Take.Blip.Client;
 using Take.Blip.Client.Extensions.Broadcast;
 using Take.Blip.Client.Extensions.Bucket;
 using Take.Blip.Client.Extensions.Contacts;
+using Take.Blip.Client.Extensions.Directory;
 using Take.Blip.Client.Extensions.Scheduler;
 using static OWLeagueBot.Models.Enumerations;
 
@@ -45,7 +47,10 @@ namespace OWLeagueBot.Receivers
             try
             {
                 var userContext = await _contextManager.GetUserContextAsync(message.From, cancellationToken);
-                var contact = await _contactService.GetAsync(message.From, cancellationToken);
+                var contact = await GetContact(message, cancellationToken);
+
+                if(userContext.FirstInteraction)
+                    message.Content = PlainText.Parse("#Onboarding_");
 
                 if (message.Content.ToString().Trim().Contains("#DEVACTION#"))
                 {
@@ -53,14 +58,34 @@ namespace OWLeagueBot.Receivers
                 }
                 else
                 {
+                    if(message.Content.ToString().Trim().Contains("Main Menu"))
+                    {
+                        message.Content = PlainText.Parse("#MainMenu_");
+                    }
                     await _sender.SendDelayedComposingAsync(message.From, 2000, cancellationToken);
                     await ReceiveMessageAsync(message, contact, userContext, cancellationToken);
                 }
             }
             catch (Exception ex)
             {
-                _logger.Error(ex);
+                await _sender.SendMessageAsync("Oops, something went wrong...", message.From, cancellationToken);   
             }
+        }
+
+        private async Task<Contact> GetContact(Message message, CancellationToken cancellationToken)
+        {
+            Contact contact;
+            try
+            {
+                contact = await _contactService.GetAsync(message.From.ToIdentity(), cancellationToken);
+            }
+            catch(LimeException lex)
+            {
+                var directory = new DirectoryExtension(_sender);
+                var account = await directory.GetDirectoryAccountAsync(message.From.ToIdentity(), cancellationToken);
+                contact = await _contactService.GetAsync(message.From.ToIdentity(), cancellationToken);
+            }
+            return contact;
         }
 
         protected abstract Task ReceiveMessageAsync(Message message, Contact contact, UserContext userContext, CancellationToken cancellationToken);

@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Threading;
 using System.Threading.Tasks;
 using Lime.Messaging.Contents;
@@ -241,7 +241,7 @@ namespace OWLeagueBot.Services
 
         private async Task FirstInteractionFlow(Message message, UserContext userContext, CancellationToken cancellationToken)
         {
-            await _sender.SendMessageAsync("Hey there! I’m Emily! I’m here to help you keep track of what is going on in the Overwatch League!", message.From, cancellationToken);
+            await _sender.SendMessageAsync("Hey there! I’m Fireball! I’m here to help you keep track of what is going on in the Overwatch League!", message.From, cancellationToken);
             await _sender.SendDelayedComposingAsync(message.From, 2000, cancellationToken);
             var menu = _quickReplyBuilder.GetDivisionQuickReply(Flow.Onboarding, cancellationToken);
             menu.To = message.From;
