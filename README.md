@@ -21,6 +21,7 @@ as part of a class assignment.
 
 ## To-Do List
 1. Logs, logs everywhere
+1. Hosting
 1. Usage of NLP
 
 _Any feature request is appreciated and will be considered dearly! Pull Requests are also encouraged!_
