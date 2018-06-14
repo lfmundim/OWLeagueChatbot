@@ -85,22 +85,6 @@ namespace OWLeagueBot.Receivers
             return contact;
         }
 
-        private async Task<Contact> GetContact(Message message, CancellationToken cancellationToken)
-        {
-            Contact contact;
-            try
-            {
-                contact = await _contactService.GetAsync(message.From.ToIdentity(), cancellationToken);
-            }
-            catch(LimeException lex)
-            {
-                var directory = new DirectoryExtension(_sender);
-                var account = await directory.GetDirectoryAccountAsync(message.From.ToIdentity(), cancellationToken);
-                contact = await _contactService.GetAsync(message.From.ToIdentity(), cancellationToken);
-            }
-            return contact;
-        }
-
         protected abstract Task ReceiveMessageAsync(Message message, Contact contact, UserContext userContext, CancellationToken cancellationToken);
     }
 }
