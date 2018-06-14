@@ -26,22 +26,31 @@ namespace OWLeagueBot.Receivers
         private readonly ILogger _logger;
         private readonly IContactExtension _contactService;
         private readonly IContextManager _contextManager;
+        private readonly IQuickReplyBuilder _quickReplyBuilder;
 
         public DefaultMessageReceiver(IContextManager contextManager, 
                                       IContactExtension contactService, 
                                       ISender sender, 
                                       ILogger logger, 
-                                      IDevActionHandler devActionHandler) : base(contextManager, contactService, sender, logger, devActionHandler) 
+                                      IDevActionHandler devActionHandler,
+                                      IQuickReplyBuilder quickReplyBuilder) : base(contextManager, contactService, sender, logger, devActionHandler) 
         {
             _sender = sender;
             _logger = logger;
             _contactService = contactService;
             _contextManager = contextManager;
+            _quickReplyBuilder = quickReplyBuilder;
         }
 
         protected override async Task ReceiveMessageAsync(Message message, Contact contact, UserContext userContext, CancellationToken cancellationToken)
         {
             await _sender.SendMessageAsync("I'm sorry, I'm just a robot, I didn't quite catch that 😓", message.From, cancellationToken);
+<<<<<<< HEAD
+            var back = _quickReplyBuilder.GetBackQuickReply();
+            back.To = message.From;
+            await _sender.SendMessageAsync(back, cancellationToken);
+=======
+>>>>>>> 46aebc919bf2b9113bed7f14f43cb01e4352d47e
         }
     }
 }

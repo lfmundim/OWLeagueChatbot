@@ -15,6 +15,7 @@
     },
     {
       "type": "OnboardingReceiver",
+      "mediaType": "text/plain",
       "content": "#Onboarding_|Hey there!",
       "priority": 1
     },

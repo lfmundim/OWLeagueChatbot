@@ -45,7 +45,7 @@ namespace OWLeagueBot.Services
             {
                 Content = new Select()
                 {
-                    Text = "Or you can go back:",
+                    Text = "Go back:",
                     Scope = SelectScope.Immediate,
                     Options = new SelectOption[]
                     {

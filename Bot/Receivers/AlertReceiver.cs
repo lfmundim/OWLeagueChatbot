@@ -25,10 +25,13 @@ namespace OWLeagueBot.Receivers
         private readonly ISender _sender;
         private readonly ILogger _logger;
         private readonly IChatbotFlowService _flowService;
+<<<<<<< HEAD
+=======
         private readonly IQuickReplyBuilder _quickReplyBuilder;
         private readonly IOWLFilter _owlFilter;
         private readonly ICarouselBuilder _carouselBuilder;
         private readonly IBroadcastExtension _broadcastExtension;
+>>>>>>> 46aebc919bf2b9113bed7f14f43cb01e4352d47e
 
         public AlertReceiver(IContextManager contextManager,
                              IContactExtension contactService,
