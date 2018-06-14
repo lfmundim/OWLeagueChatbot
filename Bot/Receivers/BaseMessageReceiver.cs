@@ -48,12 +48,6 @@ namespace OWLeagueBot.Receivers
             {
                 var userContext = await _contextManager.GetUserContextAsync(message.From, cancellationToken);
                 var contact = await GetContact(message, cancellationToken);
-<<<<<<< HEAD
-=======
-
-                if(userContext.FirstInteraction)
-                    message.Content = PlainText.Parse("#Onboarding_");
->>>>>>> 46aebc919bf2b9113bed7f14f43cb01e4352d47e
 
                 if (message.Content.ToString().Trim().Contains("#DEVACTION#"))
                 {
@@ -72,8 +66,6 @@ namespace OWLeagueBot.Receivers
             catch (Exception ex)
             {
                 await _sender.SendMessageAsync("Oops, something went wrong...", message.From, cancellationToken);   
-<<<<<<< HEAD
-=======
             }
         }
 
@@ -89,7 +81,6 @@ namespace OWLeagueBot.Receivers
                 var directory = new DirectoryExtension(_sender);
                 var account = await directory.GetDirectoryAccountAsync(message.From.ToIdentity(), cancellationToken);
                 contact = await _contactService.GetAsync(message.From.ToIdentity(), cancellationToken);
->>>>>>> 46aebc919bf2b9113bed7f14f43cb01e4352d47e
             }
             return contact;
         }
